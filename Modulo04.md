@@ -10,3 +10,8 @@ function mostrarnombre()
 "hola juan" | mostrarnombre
 "hola juan" ; mostrarnombre
 ```
+
+# PassThru
+```PowerShell
+Get-Process | Out-GridView -PassThru | Stop-Process
+```
