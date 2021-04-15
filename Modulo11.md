@@ -1,9 +1,7 @@
-# Crear y recibir un job
+# Jobs
 
-```PowerShell
-Start-Job -ScriptBlock {ps}
+## Crear y recibir un job
 
-Get-Job -Id 1
+* https://www.jesusninoc.com/04/15/ejercicios-de-powershell-crear-y-recibir-un-job/
 
-Receive-Job -Id 1
-```
+# Tareas programadas
