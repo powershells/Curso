@@ -1,6 +1,10 @@
 # Introducción a PowerShell
 - Visión general de PowerShell
   - Características
+    - Core
+  - ISE
+  - Avanzado
+    - WSL
 - Cmdlets
   - Encontrar cmdlets
 
