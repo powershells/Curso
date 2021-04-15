@@ -8,9 +8,6 @@
 ## Directorio Activo
 * https://www.jesusninoc.com/active-directory/
 
-#### Ejemplo de control a usuario que inicia sesión
-* https://www.jesusninoc.com/04/15/ejercicios-de-powershell-detectar-si-un-usuario-tiene-iniciada-la-sesion-entre-un-rango-de-horas/
-
 ## Red
 * https://www.jesusninoc.com/07/09/9-gestion-de-la-red-en-powershell/
 
