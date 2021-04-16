@@ -34,6 +34,8 @@
 * https://www.jesusninoc.com/03/24/detectar-las-coordenadas-de-una-imagen-o-un-texto-dentro-de-una-captura-de-pantalla-en-python-llamar-al-script-de-python-desde-powershell-y-hacer-clic-en-dicha-posicion/
 ### PHP
 * https://www.jesusninoc.com/12/19/ejecutar-codigo-php-desde-powershell-utilizando-variables-en-powershell/
+### Node.js
+* https://www.jesusninoc.com/08/11/11-node-js-y-powershell/
 
 ## Otros usos...
 * https://www.jesusninoc.com/03/21/explicacion-de-todos-los-pasos-para-apagar-y-encender-la-bombilla-inteligente-tp-link-kasa-regulable-kl110-desde-powershell/
