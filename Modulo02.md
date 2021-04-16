@@ -1,9 +1,4 @@
 # Cmdlets para la administración
-- Directorio Activo
-- Red (ejercicio de cliente-servidor UDP)
-- Otros cmdlets
-
-------------------
 
 ## Directorio Activo
 * https://www.jesusninoc.com/active-directory/
@@ -15,6 +10,6 @@
 * https://www.jesusninoc.com/02/12/enviar-una-ventana-mediante-el-protocolo-udp-de-un-ordenador-a-otro-desde-powershell-hacerlo-de-forma-simple-y-sencilla/
 
 ## Otros cmdlets
-```PowerShell
-Get-Command *
-```
+* https://www.jesusninoc.com/07/06/6-virtualizacion-en-powershell/
+* https://www.jesusninoc.com/11/01/instalar-y-ejecutar-ssh-para-powershell/
+* https://www.jesusninoc.com/11/12/last-longon-time-display-name-exchange-online/
