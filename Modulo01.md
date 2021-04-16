@@ -7,6 +7,8 @@
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Entorno_de_scripting_integrado_ISE
 ### Core
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Introduccion
+### WSL
+* https://www.jesusninoc.com/03/26/libro-de-powershell-nivel-avanzado-libro-gratis-de-powershell-tutorial-gratis-de-powershell/
 
 ## Sintaxis
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Entorno_de_scripting_integrado_ISE
