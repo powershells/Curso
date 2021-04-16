@@ -8,6 +8,8 @@
 ### Core
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Introduccion
 
+## Sintaxis
+* https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Entorno_de_scripting_integrado_ISE
 
 ## Cmdlets
 ### Encontrar cmdlets
