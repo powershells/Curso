@@ -1,5 +1,11 @@
 # Introducción a PowerShell
 
+## Conocimientos previos
+- Programación (lenguajes)
+- Sistemas operativos
+- Bases de datos
+- Redes
+
 ## Visión general de PowerShell
 
 ### Características
