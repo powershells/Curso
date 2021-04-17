@@ -58,5 +58,6 @@
 * https://www.jesusninoc.com/12/19/ejecutar-codigo-php-desde-powershell-utilizando-variables-en-powershell/
 ### Node.js
 * https://www.jesusninoc.com/08/11/11-node-js-y-powershell/
+* https://www.jesusninoc.com/03/22/listar-procesos-mediante-un-cmdlet-de-powershell-con-node-js-crear-el-script-desde-powershell/
 * https://www.jesusninoc.com/03/21/explicacion-de-todos-los-pasos-para-apagar-y-encender-la-bombilla-inteligente-tp-link-kasa-regulable-kl110-desde-powershell/
 * https://www.jesusninoc.com/04/17/obtener-el-token-y-el-deviceid-del-enchufe-inteligente-tp-link-wi-fi-hs100-desde-node-js-y-mostrarlo-en-powershell/
