@@ -1,7 +1,8 @@
 # Introducción a PowerShell
 
 ## Conocimientos previos
-- Programación (lenguajes)
+- Programación (lenguajes, nivel, aprendido o utilizado)
+- PowerShell
 - Sistemas operativos
 - Bases de datos
 - Redes
