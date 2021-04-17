@@ -3,22 +3,30 @@
 ## Conocimientos previos
 - Programación (lenguajes, nivel, aprendido o utilizado)
 - PowerShell
-- Sistemas operativos
+- Sistemas operativos (Windows, mac0S, Linux)
 - Bases de datos
 - Redes
 
-## Visión general de PowerShell
+## Motivación
 
-### Características
+* https://www.infodll.com/
+* https://www.jesusninoc.com/04/17/como-funciona-un-bot-como-crear-un-bot-muy-simple-en-2-minutos/
+* https://www.jesusninoc.com/nutrition/
+* https://www.jesusninoc.com/seo/
+* https://www.jesusninoc.com/mercados-y-cotizaciones/
+* https://www.jesusninoc.com/recognition/
+
+## Características
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Caracteristicas
+
+### Core
+* https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Introduccion
 
 ### ISE
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Entorno_de_scripting_integrado_ISE
 #### Ejercicios sobre procesos
 * https://www.jesusninoc.com/07/07/7-gestion-de-procesos-en-powershell/#Ejemplos
 
-### Core
-* https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Introduccion
 
 ## Cmdlets
 ### Sintaxis
@@ -45,6 +53,5 @@
 * https://www.jesusninoc.com/12/19/ejecutar-codigo-php-desde-powershell-utilizando-variables-en-powershell/
 ### Node.js
 * https://www.jesusninoc.com/08/11/11-node-js-y-powershell/
-
-## Otros usos...
 * https://www.jesusninoc.com/03/21/explicacion-de-todos-los-pasos-para-apagar-y-encender-la-bombilla-inteligente-tp-link-kasa-regulable-kl110-desde-powershell/
+* https://www.jesusninoc.com/04/17/obtener-el-token-y-el-deviceid-del-enchufe-inteligente-tp-link-wi-fi-hs100-desde-node-js-y-mostrarlo-en-powershell/
