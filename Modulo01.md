@@ -46,6 +46,7 @@
 ## Mezclar con...
 ### WSL
 * https://www.jesusninoc.com/03/26/libro-de-powershell-nivel-avanzado-libro-gratis-de-powershell-tutorial-gratis-de-powershell/
+* https://www.jesusninoc.com/03/30/crear-un-codigo-de-barras-en-bash-mediante-wsl-desde-powershell/
 ### ADB
 * https://www.jesusninoc.com/04/17/simular-el-pulsado-de-numeros-en-android-mediante-adb-a-traves-de-powershell/
 * https://www.jesusninoc.com/04/17/enviar-un-mensaje-sms-en-android-con-adb/
