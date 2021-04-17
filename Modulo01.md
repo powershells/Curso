@@ -29,6 +29,8 @@
 ## Mezclar con...
 ### WSL
 * https://www.jesusninoc.com/03/26/libro-de-powershell-nivel-avanzado-libro-gratis-de-powershell-tutorial-gratis-de-powershell/
+### ADB
+* https://www.jesusninoc.com/04/17/simular-el-pulsado-de-numeros-en-android-mediante-adb-a-traves-de-powershell/
 ### Python
 * https://www.jesusninoc.com/03/24/crear-y-ejecutar-un-script-de-python-desde-powershell/
 * https://www.jesusninoc.com/03/24/detectar-las-coordenadas-de-una-imagen-o-un-texto-dentro-de-una-captura-de-pantalla-en-python-llamar-al-script-de-python-desde-powershell-y-hacer-clic-en-dicha-posicion/
