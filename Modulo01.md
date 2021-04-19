@@ -3,7 +3,7 @@
 ## Conocimientos previos
 - Programación (lenguajes, nivel, aprendido o utilizado)
 - PowerShell
-- Sistemas operativos (Windows, mac0S, Linux)
+- Sistemas operativos (Windows, macOS, Linux)
 - Bases de datos
 - Redes
 - Automatización
