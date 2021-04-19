@@ -46,7 +46,28 @@
 - Crear un método que mate el proceso Calculator
 
 ```PowerShell
+#Clase InformacionProcesos con propiedades
+class InformacionProcesos
+{ 
+  $todoslosprocesos
+  $los5masconsumo
+  $los5menosconsumo
+  $fabricantesdeprocesos
+}
 
+#Crear objeto InformacionProcesos de la clase InformacionProcesos
+$informacion1 = New-Object -TypeName InformacionProcesos
+
+$informacion1.todoslosprocesos = Get-Process 
+$informacion1.los5masconsumo = Get-Process | Sort-Object cpu | Select-Object name,cpu -Last 5
+$informacion1.los5menosconsumo = Get-Process | Sort-Object cpu | Select-Object name,cpu -First 5
+$informacion1.fabricantesdeprocesos = Get-Process | Select-Object Company
+
+$informacion1 | Add-Member ScriptMethod MatarProceso {(Get-Process -Name Calculator).kill()}
+
+$informacion1.fabricantesdeprocesos
+
+$informacion1.MatarProceso()
 ```
 
 ### Encontrar cmdlets
