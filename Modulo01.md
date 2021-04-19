@@ -29,7 +29,6 @@
 #### Ejercicios sobre procesos
 * https://www.jesusninoc.com/07/07/7-gestion-de-procesos-en-powershell/#Ejemplos
 
-
 ## Cmdlets
 ### Sintaxis
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Entorno_de_scripting_integrado_ISE
@@ -38,6 +37,17 @@
 * https://www.jesusninoc.com/02/13/trabajar-con-objetos-en-powershell/
 ### ¿Qué es un alias?
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Alias
+
+#### Ejercicio sobre procesos y objetos: crear un objeto que contenga la siguiente información:
+- Listar todos los procesos
+- Listar los 5 procesos que más consumen
+- Listar los 5 procesos que menos consumen
+- Listar los fabricantes de los procesos
+- Crear un método que mate el proceso Calculator
+
+```PowerShell
+
+```
 
 ### Encontrar cmdlets
 * https://www.jesusninoc.com/get-command/
