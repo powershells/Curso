@@ -1,7 +1,7 @@
 # Cmdlets para la administración
 
-## Directorio Activo
-* https://www.jesusninoc.com/active-directory/
+## Usuarios
+* https://www.jesusninoc.com/07/08/8-gestion-de-usuarios-en-powershell/
 
 ## Red
 * https://www.jesusninoc.com/07/09/9-gestion-de-la-red-en-powershell/
