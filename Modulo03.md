@@ -1,6 +1,8 @@
 # Repaso módulos 1 y 2
 - Introducir datos y leer
+    - https://www.jesusninoc.com/02/05/read-and-write-host/ 
 - Importar datos
+    -  
 - CSV
 - Partir datos
 - Where
