@@ -56,7 +56,6 @@ class InformacionProcesos
     {
         (Get-Process -Name $nombre).Kill()
     }
-}
 
 # Creamos el objecto
 $infoObj = [InformacionProcesos]::new()
