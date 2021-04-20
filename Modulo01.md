@@ -6,7 +6,7 @@
 - Sistemas operativos (Windows, macOS, Linux)
 - Bases de datos
 - Redes
-- Automatización
+- Automatizaciónasdfcguygyvgy
 - Seguridad
 
 ## Motivación
