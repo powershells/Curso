@@ -1,4 +1,5 @@
 # Introducción a PowerShell
+//Modificacion powershell
 
 ## Conocimientos previos
 - Programación (lenguajes, nivel, aprendido o utilizado)
