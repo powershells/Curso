@@ -1,17 +1,7 @@
-# Pipeline
+# Pipeline avanzado
 
-```PowerShell
-function mostrarnombre()
-{
-    param([Parameter(ValueFromPipeline)]$amigo)
-    Write-Host "mensaje"$amigo
-}
+## Pasar parámetros
+* https://www.jesusninoc.com/04/15/ejercicios-de-powershell-usos-de-los-parametros-valuefrompipeline/
 
-"hola juan" | mostrarnombre
-"hola juan" ; mostrarnombre
-```
-
-# PassThru
-```PowerShell
-Get-Process | Out-GridView -PassThru | Stop-Process
-```
+## PassThru
+* https://www.jesusninoc.com/04/15/ejercicios-de-powershell-uso-de-passthru/

@@ -1,9 +1,17 @@
-# Crear y recibir un job
+# Jobs y tareas programadas
 
-```PowerShell
-Start-Job -ScriptBlock {ps}
+## Jobs
 
-Get-Job -Id 1
+### Crear y recibir un job
+* https://www.jesusninoc.com/04/15/ejercicios-de-powershell-crear-y-recibir-un-job/
 
-Receive-Job -Id 1
-```
+## Tareas programadas
+
+### Crear tareas programadas
+* https://www.jesusninoc.com/03/27/crear-una-tarea-programada-desde-powershell-en-la-que-suene-una-alarma/
+* https://www.jesusninoc.com/03/30/eliminar-una-tarea-programada-en-windows-desde-powershell-sin-pedir-confirmacion/
+* https://www.jesusninoc.com/03/30/eliminar-una-tarea-programada-en-windows-desde-powershell/
+
+#### Ejemplos de tareas programadas
+* https://www.jesusninoc.com/12/08/crear-una-tarea-programada-en-windows-que-ejecute-un-script-de-powershell-cada-10-minutos-de-forma-indefinida-aunque-el-porcentaje-de-bateria-sea-bajo/
+* https://www.jesusninoc.com/03/30/crear-una-tarea-programada-que-ejecute-un-script-que-felicita-el-cumpleanos/

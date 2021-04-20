@@ -1,34 +1,21 @@
-# Cmdlets para la administración
-- Directorio Activo
-- Red (ejercicio de cliente-servidor UDP)
-- Otros cmdlets
+# Pipeline
 
-------------------
+## ¿Cómo funcionan las canalizaciones?
+* https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Canalizaciones
 
-## Directorio Activo
-* https://www.jesusninoc.com/active-directory/
+## Operaciones en PowerShell
+* https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Operaciones
 
-#### Ejemplo de control a usuario que inicia sesión
+### Ejercicio sobre operaciones: pedir al usuario los siguientes valores: valor para ordenar, qué proceso seleccionar, cómo vamos a agrupar
 ```PowerShell
-$hora = Get-Date -Format 'HH'
-
-if ($hora -ge 19 -and $hora -lt 22 -and $env:USERNAME -match "adminfp")
-{
-    "entre 20 y 22" | Out-File \\192.168.1.1\fichero.txt
-}
-else
-{
-    "fallo" | Out-File \\192.168.1.1\fichero.txt 
-}
+Get-Process -Name (Read-Host "introduzca nombre de proceso") | group (Read-Host "introduzca tipo para agrupar") | sort (Read-Host "ordenar por qué") 
 ```
 
-## Red
-* https://www.jesusninoc.com/07/09/9-gestion-de-la-red-en-powershell/
-
-#### Ejercicio de cliente-servidor UDP
-* https://www.jesusninoc.com/02/12/enviar-una-ventana-mediante-el-protocolo-udp-de-un-ordenador-a-otro-desde-powershell-hacerlo-de-forma-simple-y-sencilla/
-
-## Otros cmdlets
+### Ejercicio sobre operaciones: leer de un fichero lo quiere el usuario ordenar, seleccionar y agrupar
 ```PowerShell
-Get-Command *
+(Get-Content .\informacion.txt)[0]
+(Get-Content .\informacion.txt)[1]
+(Get-Content .\informacion.txt)[2]
+
+Get-Process -Name (Get-Content .\informacion.txt)[0] | group (Get-Content .\informacion.txt)[0] 
 ```
