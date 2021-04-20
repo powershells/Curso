@@ -1,5 +1,5 @@
 # Introducción a PowerShell
-
+ aitor
 ## Conocimientos previos
 - Programación (lenguajes, nivel, aprendido o utilizado)
 - PowerShell
