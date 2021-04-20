@@ -8,6 +8,7 @@
 - Redes
 - Automatización
 - Seguridad
+- Prueba de errores
 
 ## Motivación
 
