@@ -1,4 +1,4 @@
-# Introducción a PowerShell 2
+# Introducción a PowerShell
 
 ## Conocimientos previos
 - Programación (lenguajes, nivel, aprendido o utilizado)
