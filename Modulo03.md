@@ -24,7 +24,7 @@
 * https://www.jesusninoc.com/05/03/creacion-masiva-de-usuarios-en-el-directorio-activo-con-powershell-parte-1/
 * https://www.jesusninoc.com/05/09/creacion-masiva-de-usuarios-en-el-directorio-activo-con-powershell-parte-2/
 
-### Crear usuarios en AD, carpeta compartida y asignar permisos
+#### Ejercicio: crear usuarios en AD, carpeta compartida y asignar permisos
 ```PowerShell
 foreach($usuario in Get-Content .\usuarios.txt)
 {
