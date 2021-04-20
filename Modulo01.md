@@ -93,3 +93,5 @@ $infoObj.matarProceso("notepad")
 * https://www.jesusninoc.com/03/22/listar-procesos-mediante-un-cmdlet-de-powershell-con-node-js-crear-el-script-desde-powershell/
 * https://www.jesusninoc.com/03/21/explicacion-de-todos-los-pasos-para-apagar-y-encender-la-bombilla-inteligente-tp-link-kasa-regulable-kl110-desde-powershell/
 * https://www.jesusninoc.com/04/17/obtener-el-token-y-el-deviceid-del-enchufe-inteligente-tp-link-wi-fi-hs100-desde-node-js-y-mostrarlo-en-powershell/
+
+Hola, esto es una modificacion
