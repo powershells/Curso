@@ -11,6 +11,9 @@
 ## Usuarios
 * https://www.jesusninoc.com/07/08/8-gestion-de-usuarios-en-powershell/
 
+## Exchange
+* https://www.jesusninoc.com/11/12/last-longon-time-display-name-exchange-online/
+
 ## Red
 * https://www.jesusninoc.com/07/09/9-gestion-de-la-red-en-powershell/
 
