@@ -1,4 +1,4 @@
-# Introducción a PowerShell
+# Introducción a PowerShell CLASE DE JESUSNINOC
 
 ## Conocimientos previos
 - Programación (lenguajes, nivel, aprendido o utilizado)
