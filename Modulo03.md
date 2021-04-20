@@ -1,9 +1,8 @@
 # Repaso módulos 1 y 2
 - Introducir datos y leer
     - https://www.jesusninoc.com/02/05/read-and-write-host/ 
-- Importar datos
-    -  
 - CSV
+    - https://www.jesusninoc.com/11/12/read-comma-separated-values-file/
 - Partir datos
 - Where
 - Foreach ficheros
