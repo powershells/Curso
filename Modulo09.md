@@ -4,6 +4,7 @@
 * https://www.jesusninoc.com/02/05/read-and-write-host/
 
 ## Gestión de errores
+* https://www.jesusninoc.com/04/20/verificar-la-ejecucion-de-un-comando-de-windows-desde-powershell/
 * https://www.jesusninoc.com/02/11/mostrar-un-mensaje-de-error-personalizado-en-powershell/
 * https://www.jesusninoc.com/01/21/ver-toda-la-informacion-detallada-sobre-un-error-en-powershell/
 
