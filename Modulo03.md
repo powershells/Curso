@@ -55,12 +55,24 @@ foreach ($usuario in Get-Content .\usuarios.txt)
 ### Ejercicio de usuarios: dependiendo de un valor (0 o 1) que hay en cada línea de un fichero que tiene usuarios, realizar la operación: 0 crear el usaurio y 1 borrar el usuario
 #### Contenido del fichero
 ```
-1,juan,holapepe
-1,diego,holapepe
-0,diego
+0,juan,holapepe
+0,diego,holapepe
+1,diego
 ```
 #### Script
 ```PowerShell
+foreach ($linea in Get-Content .\usuarios.txt)
+{
+    if($linea.Split(",")[0] -eq 1)
+    {
+        Remove-LocalUser $linea.Split(",")[1] -WhatIf
+    }
+    else
+    {
+        $pass = ConvertTo-SecureString $linea.Split(",")[2] -AsPlainText -Force
+        New-LocalUser -Name $linea.Split(",")[1] -Password $pass -WhatIf
+    }
+}
 ```
 
 ## Exchange
