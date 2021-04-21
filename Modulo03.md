@@ -19,6 +19,33 @@
 ## Usuarios
 * https://www.jesusninoc.com/07/08/8-gestion-de-usuarios-en-powershell/
 
+### Ejercicio de usuarios: crear usuarios leyendo del fichero usuarios.txt
+#### Contenido del fichero
+```
+juan,holapepe
+diego,holapepe
+```
+#### Script
+```PowerShell
+foreach ($usuario in Get-Content .\usuarios.txt)
+{
+    $pass = ConvertTo-SecureString $usuario.Split(",")[1] -AsPlainText -Force
+    New-LocalUser -Name $usuario.Split(",")[0] -Password $pass
+    # $Error[0] | Out-File logusuerro.txt
+}
+```
+
+### Ejercicio de usuarios: dependiendo de un valor (0 o 1) que hay en cada línea de un fichero que tiene usuarios, realizar la operación: 0 crear el usaurio y 1 borrar el usuario
+#### Contenido del fichero
+```
+1,juan,holapepe
+1,diego,holapepe
+0,diego
+```
+#### Script
+```PowerShell
+```
+
 ## Exchange
 * https://www.jesusninoc.com/11/12/last-longon-time-display-name-exchange-online/
 
