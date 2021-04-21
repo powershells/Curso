@@ -3,6 +3,8 @@
     - https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Operaciones
 - Introducir datos y leer
     - https://www.jesusninoc.com/02/05/read-and-write-host/ 
+- Concepto de variable
+    - https://www.jesusninoc.com/07/02/2-programacion-en-powershell/#Asignar_un_valor_a_una_variable_y_mostrar_el_valor_por_pantalla
 - CSV
     - https://www.jesusninoc.com/11/12/read-comma-separated-values-file/
 - Partir datos
