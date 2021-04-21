@@ -81,6 +81,11 @@ foreach ($linea in Get-Content .\usuarios.txt)
 ## Red
 * https://www.jesusninoc.com/07/09/9-gestion-de-la-red-en-powershell/
 
+#### Ejercicio de monitorización: obtener los identificadores de proceso de cada conexión TCP e indicar el nombre del proceso para cada identificador
+```PowerShell
+
+```
+
 #### Ejercicio de cliente-servidor UDP
 * https://www.jesusninoc.com/02/12/enviar-una-ventana-mediante-el-protocolo-udp-de-un-ordenador-a-otro-desde-powershell-hacerlo-de-forma-simple-y-sencilla/
 
