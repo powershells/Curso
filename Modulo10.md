@@ -3,5 +3,5 @@
 
 -------------
 
-# Scrapy
+# Scraping
 * https://www.jesusninoc.com/01/25/extraer-informacion-de-sitios-web/
