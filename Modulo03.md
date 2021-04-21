@@ -83,7 +83,10 @@ foreach ($linea in Get-Content .\usuarios.txt)
 
 #### Ejercicio de monitorización: obtener los identificadores de proceso de cada conexión TCP e indicar el nombre del proceso para cada identificador
 ```PowerShell
-
+foreach ($conexion in Get-NetTCPConnection | Select-Object RemoteAddress, OwningProcess)
+{
+    Write-Host $conexion.RemoteAddress, (Get-Process -Id $conexion.OwningProcess).name
+}
 ```
 
 #### Ejercicio de cliente-servidor UDP
