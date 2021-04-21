@@ -33,7 +33,7 @@ foreach($usuario in $todoslosusuarios)
 ### Ejecutar PowerShell como administrador
 * https://adamtheautomator.com/powershell-run-as-administrator/
 ```PowerShell
-Powershell.exe -Command "& {Start-Process Powershell.exe -Verb RunAs}"
+Powershell.exe -Command "& {Start-Process Powershell_ise.exe -Verb RunAs}"
 ```
 
 ### Ejercicio de usuarios: crear usuarios leyendo del fichero usuarios.txt
