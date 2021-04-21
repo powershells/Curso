@@ -12,6 +12,17 @@
 - Foreach ficheros
     - https://www.jesusninoc.com/06/03/como-funciona-el-bucle-foreach-en-powershell-paso-a-paso/
 
+### Ejercicios:
+#### Importar CSV
+```PowerShell
+$todoslosusuarios = Import-Csv .\usuarioscsv.txt
+
+foreach($usuario in $todoslosusuarios)
+{
+    $usuario.Name
+}
+```
+
 --------------------
 
 # Cmdlets para la administración
