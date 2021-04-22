@@ -3,6 +3,7 @@
 * https://www.jesusninoc.com/03/30/enviar-un-mail-desde-powershell-utilizando-el-smtp-de-outlook/
 ## Scraping
 * https://www.jesusninoc.com/01/25/extraer-informacion-de-sitios-web/
+* https://www.jesusninoc.com/06/15/insertar-en-una-base-de-datos-las-noticias-de-una-pagina-web-crear-la-base-de-datos-y-la-tabla/
 
 -------------------
 
