@@ -7,8 +7,12 @@
 
 ## PSProvider
 ### Definición
-Estructuras de datos que son mostradas en un formato entendible por PowerShell.
+- Proveedores de datos que son mostradas en un formato entendible por PowerShell en la sesión actual.
 
+#### Ver los proveedores disponibles
+```PowerShell
+Get-PSProvider
+```
 #### Ver si existe una función
 * https://www.jesusninoc.com/04/16/ejercicios-de-powershell-ver-si-existe-una-funcion/
 
