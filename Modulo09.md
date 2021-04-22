@@ -8,6 +8,10 @@
 * https://www.jesusninoc.com/02/11/mostrar-un-mensaje-de-error-personalizado-en-powershell/
 * https://www.jesusninoc.com/01/21/ver-toda-la-informacion-detallada-sobre-un-error-en-powershell/
 
+## Gestionar eventos
+* https://www.jesusninoc.com/05/04/escribir-y-ver-un-evento-en-el-registro-de-eventos-de-aplicacion/
+* https://www.jesusninoc.com/10/08/obtener-las-entradas-generadas-hoy-mismo-del-registro-de-eventos/
+
 ## Funciones
 ### Funciones complejas
 * https://www.jesusninoc.com/07/02/2-programacion-en-powershell/#Funciones
