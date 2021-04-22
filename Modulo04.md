@@ -6,6 +6,9 @@
 
 -------------------
 
+# Funciones
+* https://www.jesusninoc.com/10/14/funciones-con-parametros-y-sin-parametros/
+
 # Pipeline avanzado
 
 ## Pasar parámetros
