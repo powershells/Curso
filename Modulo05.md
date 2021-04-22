@@ -6,6 +6,9 @@
 # PSProviders y PSDrives
 
 ## PSProvider
+### Definición
+Estructuras de datos que son mostradas en un formato entendible por PowerShell.
+
 #### Ver si existe una función
 * https://www.jesusninoc.com/04/16/ejercicios-de-powershell-ver-si-existe-una-funcion/
 
