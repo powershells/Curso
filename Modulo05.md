@@ -23,5 +23,7 @@ Get-PSProvider
 * https://www.jesusninoc.com/10/03/crear-una-entrada-del-registro-desde-powershell-que-permita-ejecutar-siempre-un-programa-al-iniciar-la-sesion-de-un-usuario/
 
 ## PSDrives
+* https://docs.microsoft.com/es-es/powershell/scripting/samples/managing-windows-powershell-drives?view=powershell-7.2
+
 #### Crear recursos compartidos
 * https://www.jesusninoc.com/02/16/ejercicios-de-powershell-crear-recursos-unidades-con-new-psdrive-de-para-varias-carpetas-compartidas-leyendo-de-un-fichero-las-rutas-compartidas-y-los-nombres-de-los-recursos-que-se-van-a-crear/
