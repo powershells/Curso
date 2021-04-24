@@ -5,6 +5,7 @@
   - https://github.com/jesusninoc/ClasesISO/blob/master/2021-04-31.md#get-ciminstance
 - WMI (Windows Management Instrumentation) es la implementación de Microsoft de CIM, con la que se proveen métodos para consultar y modificar la configuración de una máquina Windows.
   - https://github.com/jesusninoc/ClasesISO/blob/master/2021-04-31.md#get-wmiobject
+  - https://docs.microsoft.com/es-es/powershell/scripting/samples/getting-wmi-objects--get-ciminstance-?view=powershell-7.2
 
 ## Querys
 
