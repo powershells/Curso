@@ -2,7 +2,9 @@
 
 ## Conceptos
 - CIM (Common Information Model) es un estándar abierto creado por la organización DMTF orientado a proveer una definición común para el intercambio de información entre sistemas, redes, aplicaciones y servicios.
+  - https://github.com/jesusninoc/ClasesISO/blob/master/2021-04-31.md#get-ciminstance
 - WMI (Windows Management Instrumentation) es la implementación de Microsoft de CIM, con la que se proveen métodos para consultar y modificar la configuración de una máquina Windows.
+  - https://github.com/jesusninoc/ClasesISO/blob/master/2021-04-31.md#get-wmiobject
 
 ## Querys
 
