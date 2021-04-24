@@ -1,4 +1,6 @@
 # Repaso módulo 3
+## Ayuda
+* https://www.jesusninoc.com/10/16/introduccion-a-los-cmdlets-comandos/
 ## Mail
 * https://www.jesusninoc.com/03/30/enviar-un-mail-desde-powershell-utilizando-el-smtp-de-outlook/
 ## Scraping
