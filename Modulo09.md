@@ -12,6 +12,9 @@
 * https://www.jesusninoc.com/05/04/escribir-y-ver-un-evento-en-el-registro-de-eventos-de-aplicacion/
 * https://www.jesusninoc.com/10/08/obtener-las-entradas-generadas-hoy-mismo-del-registro-de-eventos/
 
+## Depuración
+* https://docs.microsoft.com/es-es/powershell/scripting/samples/decode-powershell-command-from-a-running-process?view=powershell-7.2
+
 ## Funciones
 ### Funciones complejas
 * https://www.jesusninoc.com/07/02/2-programacion-en-powershell/#Funciones
