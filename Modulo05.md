@@ -23,6 +23,8 @@ Get-PSProvider
 * https://www.jesusninoc.com/10/03/crear-una-entrada-del-registro-desde-powershell-que-permita-ejecutar-siempre-un-programa-al-iniciar-la-sesion-de-un-usuario/
 
 ## PSDrives
+### Definición
+Puede usar el comando New-PSDrive para agregar sus propias unidades de Windows PowerShell. Para obtener la sintaxis del cmdlet New-PSDrive, escriba un comando Get-Command con el parámetro Syntax.
 * https://docs.microsoft.com/es-es/powershell/scripting/samples/managing-windows-powershell-drives?view=powershell-7.2
 
 #### Crear recursos compartidos
