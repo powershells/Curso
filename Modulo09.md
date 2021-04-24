@@ -25,6 +25,7 @@
 * https://www.jesusninoc.com/02/27/crear-una-funcion-dinamica-en-powershell-que-obtiene-el-contenido-de-la-funcion-de-un-fichero-json-que-esta-en-un-servidor-web/
 
 ## Módulos
+* https://www.jesusninoc.com/04/09/crear-un-modulo-en-powershell/
 * https://www.jesusninoc.com/11/01/instalar-y-ejecutar-ssh-para-powershell/
 
 ## Automatización avanzada
