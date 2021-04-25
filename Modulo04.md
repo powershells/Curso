@@ -11,6 +11,7 @@
 
 # Funciones
 * https://www.jesusninoc.com/10/14/funciones-con-parametros-y-sin-parametros/
+* https://www.jesusninoc.com/04/25/crear-una-funcion-en-powershell-que-permita-autocompletar/
 
 # Pipeline avanzado
 
