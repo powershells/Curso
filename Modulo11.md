@@ -1,17 +1,13 @@
-# Jobs y tareas programadas
+# Técnicas avanzadas
 
-## Jobs
+## Acceso remoto
+* https://docs.microsoft.com/es-es/powershell/scripting/learn/ps101/08-powershell-remoting?view=powershell-7.2
+* https://docs.microsoft.com/es-es/powershell/scripting/dsc/troubleshooting/troubleshooting?view=powershell-7.2
+* https://docs.microsoft.com/es-es/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.2
 
-### Crear y recibir un job
-* https://www.jesusninoc.com/04/15/ejercicios-de-powershell-crear-y-recibir-un-job/
-
-## Tareas programadas
-
-### Crear tareas programadas
-* https://www.jesusninoc.com/03/27/crear-una-tarea-programada-desde-powershell-en-la-que-suene-una-alarma/
-* https://www.jesusninoc.com/03/30/eliminar-una-tarea-programada-en-windows-desde-powershell-sin-pedir-confirmacion/
-* https://www.jesusninoc.com/03/30/eliminar-una-tarea-programada-en-windows-desde-powershell/
-
-#### Ejemplos de tareas programadas
-* https://www.jesusninoc.com/12/08/crear-una-tarea-programada-en-windows-que-ejecute-un-script-de-powershell-cada-10-minutos-de-forma-indefinida-aunque-el-porcentaje-de-bateria-sea-bajo/
-* https://www.jesusninoc.com/03/30/crear-una-tarea-programada-que-ejecute-un-script-que-felicita-el-cumpleanos/
+## DSC
+DSC es una plataforma de administración de PowerShell que le permite administrar su infraestructura de desarrollo y TI con configuración como código.
+* https://docs.microsoft.com/es-es/powershell/scripting/dsc/overview/dscforengineers?view=powershell-7.2
+* https://docs.microsoft.com/es-es/powershell/scripting/dsc/getting-started/wingettingstarted?view=powershell-7.2
+* https://docs.microsoft.com/es-es/powershell/scripting/dsc/configurations/write-compile-apply-configuration?view=powershell-7.2
+* https://docs.microsoft.com/es-es/powershell/scripting/dsc/pull-server/pullserversmb?view=powershell-7.2
