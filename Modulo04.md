@@ -54,5 +54,42 @@ foreach($usuario in Get-Content .\usuarios.txt)
 ## Pasar parámetros
 * https://www.jesusninoc.com/04/15/ejercicios-de-powershell-usos-de-los-parametros-valuefrompipeline/
 
+#### Ejercicio: crear un script que permita arrancar o matar un poceso mediante el uso de funciones teniendo en cuenta ValueFromPipeline
+```PowwerShell
+function arrancar($program)
+{
+    Start-Process $program
+    Start-Sleep -Seconds 5
+    return $program
+}
+
+function parar()
+{
+    param([Parameter(ValueFromPipeline)]$program)
+    Stop-Process -Name $program
+}
+
+# ValueFromPipeline
+arrancar notepad | parar
+```
+
 ## PassThru
 * https://www.jesusninoc.com/04/15/ejercicios-de-powershell-uso-de-passthru/
+
+#### Ejercicio: crear un script que permita arrancar o matar un poceso mediante el uso de funciones teniendo en cuenta PassThru
+```PowwerShell
+function arrancar($program)
+{
+    Start-Process $program
+    Start-Sleep -Seconds 5
+    return $program
+}
+
+function parar()
+{
+    param([Parameter(ValueFromPipeline)]$program)
+    Stop-Process $program
+}
+
+Get-Process | Out-GridView -PassThru | parar
+```
