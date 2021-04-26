@@ -65,6 +65,18 @@ Format-Volume -FileSystem NTFS -DriveLetter d
 Enable-BitLocker -MountPoint "d:" -RecoveryPasswordProtector -UsedSpaceOnly -Verbose
 ```
 
+#### Ejercicio: de todos los procesos que se están ejecutando realizar el hash de cada uno de ellos
+```PowerShell
+foreach ($fichero in Get-Process | select name,path)
+{
+    Write-Host $fichero.name, (Get-FileHash $fichero.Path).Hash
+}
+```
+
+#### Ejercicio: de todos los ficheros dll que se utilizando para ejecutar procesos realizar el hash de cada uno de ellos
+```PowerShell
+```
+
 ----------------------
 
 # PSProviders y PSDrives
