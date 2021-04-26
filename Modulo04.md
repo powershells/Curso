@@ -1,6 +1,8 @@
 # Repaso módulo 3
 
 ## Directorio Activo
+* https://www.jesusninoc.com/05/16/utilizar-un-filtro-ldap-para-localizar-un-usuario/
+* https://www.jesusninoc.com/05/06/check-last-login-time-ad-users/
 * https://www.jesusninoc.com/05/03/creacion-masiva-de-usuarios-en-el-directorio-activo-con-powershell-parte-1/
 * https://www.jesusninoc.com/05/09/creacion-masiva-de-usuarios-en-el-directorio-activo-con-powershell-parte-2/
 
@@ -19,6 +21,9 @@ foreach($usuario in Get-Content .\usuarios.txt)
     Start-Sleep -Seconds 5
 }
 ```
+
+### Políticas de grupo
+* https://github.com/jesusninoc/ClasesISO/blob/master/2021-04-22.md
 
 ## Otros cmdlets
 * https://www.jesusninoc.com/07/06/6-virtualizacion-en-powershell/
