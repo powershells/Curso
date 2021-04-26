@@ -1,4 +1,30 @@
 # Repaso módulo 3
+
+## Directorio Activo
+* https://www.jesusninoc.com/05/03/creacion-masiva-de-usuarios-en-el-directorio-activo-con-powershell-parte-1/
+* https://www.jesusninoc.com/05/09/creacion-masiva-de-usuarios-en-el-directorio-activo-con-powershell-parte-2/
+
+#### Ejercicio: crear usuarios en AD, carpeta compartida y asignar permisos
+```PowerShell
+foreach($usuario in Get-Content .\usuarios.txt)
+{
+    $usuario
+    $password = (ConvertTo-SecureString "Alum4dos" -AsPlainText -force)
+    New-ADUSer -Name $usuario -Sam $usuario -Path "OU=asir,DC=andel,DC=local" -AccountPassword $password -Enable $true
+    $HomeDirectory = ("\\localhost\log\" + $usuario)
+    mkdir $HomeDirectory
+    $usuariomaspermiso = $usuario + ":F"
+    $rutantfs = "C:\Users\Administrador\Desktop\log\" + $usuario
+    icacls $rutantfs /grant $usuariomaspermiso
+    Start-Sleep -Seconds 5
+}
+```
+
+## Otros cmdlets
+* https://www.jesusninoc.com/07/06/6-virtualizacion-en-powershell/
+* https://www.jesusninoc.com/11/01/instalar-y-ejecutar-ssh-para-powershell/
+* https://www.jesusninoc.com/11/12/last-longon-time-display-name-exchange-online/
+
 ## Ayuda
 * https://www.jesusninoc.com/10/16/introduccion-a-los-cmdlets-comandos/
 ## Mail
