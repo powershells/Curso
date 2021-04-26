@@ -73,8 +73,12 @@ foreach ($fichero in Get-Process | select name,path)
 }
 ```
 
-#### Ejercicio: de todos los ficheros dll que se utilizando para ejecutar procesos realizar el hash de cada uno de ellos
+#### Ejercicio: de todos los ficheros dll que se están utilizando para ejecutar procesos realizar el hash de cada uno de ellos
 ```PowerShell
+foreach ($fichero in ((Get-Process).Modules.FileName | group).name)
+{
+    Get-FileHash $fichero
+}
 ```
 
 ----------------------
