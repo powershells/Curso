@@ -22,6 +22,10 @@ foreach($usuario in Get-Content .\usuarios.txt)
 }
 ```
 
+### Unidades organizativas
+* https://www.jesusninoc.com/06/18/verificar-si-existe-una-unidad-organizativa-con-powershell/
+* https://www.jesusninoc.com/05/22/ejercicios-de-powershell-crear-una-ou-unidad-organizativa/
+
 ### Políticas de grupo
 * https://github.com/jesusninoc/ClasesISO/blob/master/2021-04-22.md
 
