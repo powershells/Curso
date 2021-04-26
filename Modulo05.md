@@ -1,6 +1,58 @@
 # Sistema de archivos
 * https://www.jesusninoc.com/07/04/4-gestion-del-sistema-de-archivos-en-powershell/
 
+#### Ejercicio: leer de un fichero nombres de ficheros y directorios y crearlos (solución switch y function avanzada, realizada por Cristian G.)
+```PowerShell
+# fichero, compras.txt
+# directorio, pedidos
+
+function GenerarItems($tipo){
+    $tipo = $tipo.Split(",")
+    switch($tipo[0]){
+        'fichero'{
+            if(New-Item $tipo[1] -ItemType File){
+                Write-Host("Fichero creado: " + $tipo[1])
+            }
+            
+        }
+        'directorio'{
+            if(New-Item $tipo[1] -ItemType Directory){
+                Write-Host("Directorio creado: " + $tipo[1])
+            }
+        }
+    }
+}
+$path = "C:\Users\cgil\Documents\PowerShell\Curso2021\Ejemplos\nombres.txt"
+
+$lista = Get-Content $path 
+
+foreach ($tipo in $lista){
+    GenerarItems($tipo)
+}
+```
+
+#### Ejercicio: leer de un fichero nombres de ficheros y directorios y crearlos (solución if simple)
+```PowerShell
+# fichero, compras.txt
+# directorio, pedidos
+
+foreach ($linea in Get-Content .\nombres.txt)
+{
+    if ($linea.Split(",")[0] -eq "fichero")
+    {
+        New-Item -Name $linea.Split(",")[1] -Value "hola"
+    }
+    elseif ($linea.Split(",")[0] -eq "directorio")
+    {
+        New-Item -Name $linea.Split(",")[1] -ItemType Directory
+    }
+    else
+    {
+        "otra cosa"
+    }
+}
+```
+
 ----------------------
 
 # PSProviders y PSDrives
