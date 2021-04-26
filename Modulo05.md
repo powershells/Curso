@@ -109,3 +109,14 @@ Get-PSProvider
 
 #### Crear recursos compartidos
 * https://www.jesusninoc.com/02/16/ejercicios-de-powershell-crear-recursos-unidades-con-new-psdrive-de-para-varias-carpetas-compartidas-leyendo-de-un-fichero-las-rutas-compartidas-y-los-nombres-de-los-recursos-que-se-van-a-crear/
+
+------------------
+
+# Ejercicio integrador: crear un usuario con su contraseña, crear una carpeta para el usuario, compartir esa carpeta y añadir en esa carpeta un fichero con los hash de todos los procesos que se están ejecutando y otro fichero con los hash de los todos los ficheros dll. Todos los valores que necesitamos están escritos en un fichero
+
+```PowerShell
+# Fichero de ejemplo:
+# pepito, P$aswo12
+
+
+```
