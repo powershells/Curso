@@ -46,6 +46,7 @@ foreach($usuario in Get-Content .\usuarios.txt)
 
 # Funciones
 * https://www.jesusninoc.com/10/14/funciones-con-parametros-y-sin-parametros/
+## Función autocompletar (ejecutar en shell)
 * https://www.jesusninoc.com/04/25/crear-una-funcion-en-powershell-que-permita-autocompletar/
 
 # Pipeline avanzado
