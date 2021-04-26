@@ -3,6 +3,9 @@
 ## Input
 * https://www.jesusninoc.com/02/05/read-and-write-host/
 
+## GUI
+* https://www.jesusninoc.com/08/07/7-diseno-grafico-con-powershell-nivel-avanzado/
+
 ## Gestión de errores
 * https://www.jesusninoc.com/04/20/verificar-la-ejecucion-de-un-comando-de-windows-desde-powershell/
 * https://www.jesusninoc.com/02/11/mostrar-un-mensaje-de-error-personalizado-en-powershell/
