@@ -55,7 +55,7 @@ foreach($usuario in Get-Content .\usuarios.txt)
 * https://www.jesusninoc.com/04/15/ejercicios-de-powershell-usos-de-los-parametros-valuefrompipeline/
 
 #### Ejercicio: crear un script que permita arrancar o matar un poceso mediante el uso de funciones teniendo en cuenta ValueFromPipeline
-```PowwerShell
+```PowerShell
 function arrancar($program)
 {
     Start-Process $program
@@ -77,7 +77,7 @@ arrancar notepad | parar
 * https://www.jesusninoc.com/04/15/ejercicios-de-powershell-uso-de-passthru/
 
 #### Ejercicio: crear un script que permita arrancar o matar un poceso mediante el uso de funciones teniendo en cuenta PassThru
-```PowwerShell
+```PowerShell
 function arrancar($program)
 {
     Start-Process $program
