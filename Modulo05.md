@@ -53,7 +53,7 @@ foreach ($linea in Get-Content .\nombres.txt)
 }
 ```
 
-#### Ejercicio: crear un disco virtual, ponerlo en funcionamiento y cifrar el contenido con BitLocker)
+#### Ejercicio: crear un disco virtual, ponerlo en funcionamiento y cifrar el contenido con BitLocker
 ```PowerShell
 New-VHD -Path disc1.vhdx -SizeBytes 100mb
 Mount-VHD .\disc1.vhdx
