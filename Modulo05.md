@@ -53,6 +53,18 @@ foreach ($linea in Get-Content .\nombres.txt)
 }
 ```
 
+#### Ejercicio: crear un disco virtual, ponerlo en funcionamiento y cifrar el contenido con BitLocker)
+```PowerShell
+New-VHD -Path disc1.vhdx -SizeBytes 100mb
+Mount-VHD .\disc1.vhdx
+Get-Disk
+Initialize-Disk -Number 1
+New-Partition -DiskNumber 1 -UseMaximumSize -AssignDriveLetter
+Get-Volume
+Format-Volume -FileSystem NTFS -DriveLetter d 
+Enable-BitLocker -MountPoint "d:" -RecoveryPasswordProtector -UsedSpaceOnly -Verbose
+```
+
 ----------------------
 
 # PSProviders y PSDrives
