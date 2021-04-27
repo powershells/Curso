@@ -1,1 +1,0 @@
-# Técnicas avanzadas
