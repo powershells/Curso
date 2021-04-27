@@ -2,6 +2,7 @@
 
 ## Input
 * https://www.jesusninoc.com/02/05/read-and-write-host/
+* https://www.jesusninoc.com/02/17/pasar-parametros-en-scripts-de-powershell/
 
 ## GUI
 * https://www.jesusninoc.com/08/07/7-diseno-grafico-con-powershell-nivel-avanzado/
