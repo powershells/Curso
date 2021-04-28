@@ -32,16 +32,16 @@ foreach ($tipo in $lista){
 ```
 
 #### Ejercicio: leer de un fichero nombres de ficheros y directorios y crearlos (solución if simple)
-* https://www.jesusninoc.com/04/28/ejercicio-de-powershell-leer-de-un-fichero-nombres-de-ficheros-y-directorios-y-crearlos-solucion-if-simple/
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-leer-de-un-fichero-nombres-de-ficheros-y-directorios-y-crearlos-solucion-if-simple/
 
 #### Ejercicio: crear un disco virtual, ponerlo en funcionamiento y cifrar el contenido con BitLocker
-* https://www.jesusninoc.com/04/28/ejercicio-de-powershell-crear-un-disco-virtual-ponerlo-en-funcionamiento-y-cifrar-el-contenido-con-bitlocker/
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-crear-un-disco-virtual-ponerlo-en-funcionamiento-y-cifrar-el-contenido-con-bitlocker/
 
 #### Ejercicio: de todos los procesos que se están ejecutando realizar el hash de cada uno de ellos
-* https://www.jesusninoc.com/04/28/ejercicio-de-powershell-de-todos-los-procesos-que-se-estan-ejecutando-realizar-el-hash-de-cada-uno-de-ellos/
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-de-todos-los-procesos-que-se-estan-ejecutando-realizar-el-hash-de-cada-uno-de-ellos/
 
 #### Ejercicio: de todos los ficheros dll que se están utilizando para ejecutar procesos realizar el hash de cada uno de ellos
-* https://www.jesusninoc.com/04/28/ejercicio-de-powershell-de-todos-los-ficheros-dll-que-se-estan-utilizando-para-ejecutar-procesos-realizar-el-hash-de-cada-uno-de-ellos/
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-de-todos-los-ficheros-dll-que-se-estan-utilizando-para-ejecutar-procesos-realizar-el-hash-de-cada-uno-de-ellos/
 
 ----------------------
 
@@ -75,4 +75,4 @@ Get-PSProvider
 ------------------
 
 # Ejercicio integrador: crear un usuario con su contraseña, crear una carpeta para el usuario, compartir esa carpeta y añadir en esa carpeta un fichero con los hash de todos los procesos que se están ejecutando y otro fichero con los hash de los todos los ficheros dll. Todos los valores que necesitamos están escritos en un fichero
-* https://www.jesusninoc.com/04/28/ejercicio-de-powershell-crear-un-usuario-con-su-contrasena-crear-una-carpeta-para-el-usuario-compartir-esa-carpeta-y-anadir-en-esa-carpeta-un-fichero-con-los-hash-de-todos-los-procesos-que-se-estan/
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-crear-un-usuario-con-su-contrasena-crear-una-carpeta-para-el-usuario-compartir-esa-carpeta-y-anadir-en-esa-carpeta-un-fichero-con-los-hash-de-todos-los-procesos-que-se-estan-e/
