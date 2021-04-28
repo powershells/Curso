@@ -88,3 +88,29 @@ $resultado = foreach ($cadapalabra in $palabras)
 }
 $resultado -join " "
 ```
+
+#### Ejercio: crear para cada proceso una carpeta con el nombre del proceso y dentro de cada carpeta creamos un fichero con toda la información del proceso, almacenar toda esta información cada 10 minutos
+
+# - Función crea nombre de proceso y dentro de cada carpeta fichero con toda la información del proceso
+``` PowerShell
+function crear()
+{
+    foreach ($proceso in (Get-Process).Name)
+    {
+        mkdir $proceso -Force
+        Get-Process -Name $proceso > ($proceso+"\informacion.txt")
+    }
+}
+``` 
+# - Ejecutar la función anterior cada 10 minutos
+``` PowerShell
+for(1)
+{
+    $fichero = (Get-Date).ToString("yyyyMMddhhmmss")
+    mkdir $fichero
+    cd $fichero
+    crear
+    cd ..
+    Start-Sleep -Seconds 5
+}
+```
