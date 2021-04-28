@@ -32,3 +32,28 @@ foreach($dia in -100..100)
     mkdir (Get-Date).AddDays($dia).ToString("yyyy/MM/dd")
 }
 ```
+
+#### Ejercicio: crear una función que cifre una palabra y otra función que descifre la palabra cifrada
+```PowerShell
+function cifrar( $array )
+{
+    $palabracifrada = foreach($num in 0..($array.Length-1))
+    {
+        [char]([Int]$array[$num]+1)
+    }
+    $palabracifrada -join ""
+}
+
+$cifrada = cifrar hola
+
+function descifrar( $cifrada )
+{
+    $palabradescifrada = foreach($num in 0..($cifrada.Length-1))
+    {
+        [char]([Int]$cifrada[$num]-1)
+    }
+    $palabradescifrada -join ""
+}
+
+descifrar $cifrada
+```
