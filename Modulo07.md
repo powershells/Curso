@@ -105,7 +105,7 @@ function crear()
 }
 ```
 
-##- Ejecutar la función anterior cada 10 minutos
+## - Ejecutar la función anterior cada 10 minutos
 ``` PowerShell
 for(1)
 {
