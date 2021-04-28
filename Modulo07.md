@@ -57,3 +57,34 @@ function descifrar( $cifrada )
 
 descifrar $cifrada
 ```
+
+#### Ejercicio: adivinar un número entre 1 y 10
+``` PowerShell
+$adivinar = Get-Random (1..10)
+
+for(1)
+{
+    $numerouser = Read-Host "introduzca número: "
+    if($numerouser -eq $adivinar)
+    {
+        "has acertado"
+        break;
+    }
+    else
+    {
+        "no has acertado"
+    }
+}
+```
+
+#### EjeRcicio: poner en mayúscula la primera letra de un nombre y de los apellidos
+``` PowerShell
+$palabra = " JUAN IglesiaS "
+$palabra = $palabra.ToLower().Trim()
+$palabras = $palabra.Split(" ")
+$resultado = foreach ($cadapalabra in $palabras)
+{
+    $cadapalabra.substring(0,1).ToUpper()+$cadapalabra.substring(1).ToLower()
+}
+$resultado -join " "
+```
