@@ -7,8 +7,10 @@
 ## Conceptos
 - CIM (Common Information Model) es un estándar abierto creado por la organización DMTF orientado a proveer una definición común para el intercambio de información entre sistemas, redes, aplicaciones y servicios.
   - https://github.com/jesusninoc/ClasesISO/blob/master/2021-04-31.md#get-ciminstance
+  - https://www.jesusninoc.com/11/09/enumerar-las-clases-cim-de-un-espacio-de-nombres/
 - WMI (Windows Management Instrumentation) es la implementación de Microsoft de CIM, con la que se proveen métodos para consultar y modificar la configuración de una máquina Windows.
   - https://github.com/jesusninoc/ClasesISO/blob/master/2021-04-31.md#get-wmiobject
+  - https://www.jesusninoc.com/11/08/enumerar-todas-las-clases-wmi/
   - https://docs.microsoft.com/es-es/powershell/scripting/samples/getting-wmi-objects--get-ciminstance-?view=powershell-7.2
 - CIM vs WMI
   - La respuesta simple es que puede usar los cmdlets de Instrumental de administración de Windows (WMI) o del Modelo de información común (CIM), pero existen algunas ventajas significativas al usar los cmdlets de CIM más nuevos.
