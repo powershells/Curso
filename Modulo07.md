@@ -111,6 +111,6 @@ for(1)
     cd $fichero
     crear
     cd ..
-    Start-Sleep -Seconds 5
+    Start-Sleep -Seconds (10*60)
 }
 ```
