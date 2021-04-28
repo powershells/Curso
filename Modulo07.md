@@ -77,7 +77,7 @@ for(1)
 }
 ```
 
-#### EjeRcicio: poner en mayúscula la primera letra de un nombre y de los apellidos
+#### Ejercicio: poner en mayúscula la primera letra de un nombre y de los apellidos
 ``` PowerShell
 $palabra = " JUAN IglesiaS "
 $palabra = $palabra.ToLower().Trim()
@@ -89,9 +89,11 @@ $resultado = foreach ($cadapalabra in $palabras)
 $resultado -join " "
 ```
 
-#### Ejercio: crear para cada proceso una carpeta con el nombre del proceso y dentro de cada carpeta creamos un fichero con toda la información del proceso, almacenar toda esta información cada 10 minutos
+----------------
 
-# - Función crea nombre de proceso y dentro de cada carpeta fichero con toda la información del proceso
+# Ejercicio integrador: crear para cada proceso una carpeta con el nombre del proceso y dentro de cada carpeta creamos un fichero con toda la información del proceso, almacenar toda esta información cada 10 minutos
+
+## - Función crea nombre de proceso y dentro de cada carpeta fichero con toda la información del proceso
 ``` PowerShell
 function crear()
 {
@@ -101,8 +103,9 @@ function crear()
         Get-Process -Name $proceso > ($proceso+"\informacion.txt")
     }
 }
-``` 
-# - Ejecutar la función anterior cada 10 minutos
+```
+
+##- Ejecutar la función anterior cada 10 minutos
 ``` PowerShell
 for(1)
 {
