@@ -11,14 +11,17 @@ for(1)
     New-Item -ItemType Directory -Name $nombre
 
     # Redirección
-    (Get-Process).Name > ($nombre+"\dlls.txt")
+    # (Get-Process).Name > ($nombre+"\dlls.txt")
 
-    # Con Out-File
+    # Con Out-File accediendo a la carpeta
     # Set-Location $nombre
     # (Get-Process).Name | Out-File dlls.txt
     # Set-Location ..
+    
+    # Con Out-File
+    (Get-Process).Name | Out-File -FilePath ($nombre+"\prueba.txt")
 
-    Start-Sleep -Seconds (10*60)
+    Start-Sleep -Seconds (10)
 }
 ```
 
