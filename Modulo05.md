@@ -32,54 +32,16 @@ foreach ($tipo in $lista){
 ```
 
 #### Ejercicio: leer de un fichero nombres de ficheros y directorios y crearlos (solución if simple)
-```PowerShell
-# fichero, compras.txt
-# directorio, pedidos
-
-foreach ($linea in Get-Content .\nombres.txt)
-{
-    if ($linea.Split(",")[0] -eq "fichero")
-    {
-        New-Item -Name $linea.Split(",")[1] -Value "hola"
-    }
-    elseif ($linea.Split(",")[0] -eq "directorio")
-    {
-        New-Item -Name $linea.Split(",")[1] -ItemType Directory
-    }
-    else
-    {
-        "otra cosa"
-    }
-}
-```
+* https://www.jesusninoc.com/04/28/ejercicio-de-powershell-leer-de-un-fichero-nombres-de-ficheros-y-directorios-y-crearlos-solucion-if-simple/
 
 #### Ejercicio: crear un disco virtual, ponerlo en funcionamiento y cifrar el contenido con BitLocker
-```PowerShell
-New-VHD -Path disc1.vhdx -SizeBytes 100mb
-Mount-VHD .\disc1.vhdx
-Get-Disk
-Initialize-Disk -Number 1
-New-Partition -DiskNumber 1 -UseMaximumSize -AssignDriveLetter
-Get-Volume
-Format-Volume -FileSystem NTFS -DriveLetter d 
-Enable-BitLocker -MountPoint "d:" -RecoveryPasswordProtector -UsedSpaceOnly -Verbose
-```
+* https://www.jesusninoc.com/04/28/ejercicio-de-powershell-crear-un-disco-virtual-ponerlo-en-funcionamiento-y-cifrar-el-contenido-con-bitlocker/
 
 #### Ejercicio: de todos los procesos que se están ejecutando realizar el hash de cada uno de ellos
-```PowerShell
-foreach ($fichero in Get-Process | select name,path)
-{
-    Write-Host $fichero.name, (Get-FileHash $fichero.Path).Hash
-}
-```
+* https://www.jesusninoc.com/04/28/ejercicio-de-powershell-de-todos-los-procesos-que-se-estan-ejecutando-realizar-el-hash-de-cada-uno-de-ellos/
 
 #### Ejercicio: de todos los ficheros dll que se están utilizando para ejecutar procesos realizar el hash de cada uno de ellos
-```PowerShell
-foreach ($fichero in ((Get-Process).Modules.FileName | group).name)
-{
-    Get-FileHash $fichero
-}
-```
+* https://www.jesusninoc.com/04/28/ejercicio-de-powershell-de-todos-los-ficheros-dll-que-se-estan-utilizando-para-ejecutar-procesos-realizar-el-hash-de-cada-uno-de-ellos/
 
 ----------------------
 
