@@ -35,9 +35,5 @@
 * https://www.jesusninoc.com/03/22/obtener-informacion-sobre-el-hardware-de-un-equipo-creando-un-objeto-y-convertirlo-en-json-y-despues-lo-convierte-a-codigo-qr-por-ultimo-comprueba-y-lee-el-codigo-qr-generado/
 
 #### Realizar un inventario utilizando CIM
-```PowerShell
-$ComputerSystem=Get-CimInstance Win32_ComputerSystem
-$BaseBoard=Get-CimInstance Win32_BaseBoard
-$BIOS=Get-CimInstance Win32_BIOS
-$Processor=Get-CimInstance Win32_Processor
-```
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-realizar-un-inventario-de-un-equipo-mediante-llamadas-cim/
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-realizar-un-inventario-de-un-equipo-mediante-llamadas-cim-y-convertirlo-a-json/
