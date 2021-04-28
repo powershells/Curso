@@ -31,6 +31,9 @@
 ### Hardware
 * https://www.jesusninoc.com/07/03/3-gestion-del-hardware-en-powershell/
 
+#### Realizar un inventario
+* https://www.jesusninoc.com/03/22/obtener-informacion-sobre-el-hardware-de-un-equipo-creando-un-objeto-y-convertirlo-en-json-y-despues-lo-convierte-a-codigo-qr-por-ultimo-comprueba-y-lee-el-codigo-qr-generado/
+
 #### Realizar un inventario utilizando CIM
 ```PowerShell
 $ComputerSystem=Get-CimInstance Win32_ComputerSystem
@@ -38,6 +41,3 @@ $BaseBoard=Get-CimInstance Win32_BaseBoard
 $BIOS=Get-CimInstance Win32_BIOS
 $Processor=Get-CimInstance Win32_Processor
 ```
-
-#### Realizar un inventario
-* https://www.jesusninoc.com/03/22/obtener-informacion-sobre-el-hardware-de-un-equipo-creando-un-objeto-y-convertirlo-en-json-y-despues-lo-convierte-a-codigo-qr-por-ultimo-comprueba-y-lee-el-codigo-qr-generado/
