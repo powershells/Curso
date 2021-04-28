@@ -36,28 +36,8 @@ foreach($usuario in $todoslosusuarios)
 ### Ejercicio de usuarios: crear usuarios leyendo del fichero usuarios.txt
 * https://www.jesusninoc.com/04/28/ejercicios-de-powershell-crear-usuarios-leyendo-del-fichero-usuarios-txt/
 
-### Ejercicio de usuarios: dependiendo de un valor (0 o 1) que hay en cada línea de un fichero que tiene usuarios, realizar la operación: 0 crear el usaurio y 1 borrar el usuario
-#### Contenido del fichero
-```
-0,juan,holapepe
-0,diego,holapepe
-1,diego
-```
-#### Script
-```PowerShell
-foreach ($linea in Get-Content .\usuarios.txt)
-{
-    if($linea.Split(",")[0] -eq 1)
-    {
-        Remove-LocalUser $linea.Split(",")[1] -WhatIf
-    }
-    else
-    {
-        $pass = ConvertTo-SecureString $linea.Split(",")[2] -AsPlainText -Force
-        New-LocalUser -Name $linea.Split(",")[1] -Password $pass -WhatIf
-    }
-}
-```
+### Ejercicio de usuarios: dependiendo de un valor (0 o 1) que hay en cada línea de un fichero que tiene usuarios, realizar la operación: 0 crear el usuario y 1 borrar el usuario
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-ejercicio-de-usuarios-sobre-usuarios-dependiendo-de-un-valor-0-o-1-que-hay-en-cada-linea-de-un-fichero-que-tiene-usuarios-realizar-la-operacion-0-crear-el-usuario-y-1-bo/
 
 ## Exchange
 * https://www.jesusninoc.com/11/12/last-longon-time-display-name-exchange-online/
@@ -66,12 +46,7 @@ foreach ($linea in Get-Content .\usuarios.txt)
 * https://www.jesusninoc.com/07/09/9-gestion-de-la-red-en-powershell/
 
 #### Ejercicio de monitorización: obtener los identificadores de proceso de cada conexión TCP e indicar el nombre del proceso para cada identificador
-```PowerShell
-foreach ($conexion in Get-NetTCPConnection | Select-Object RemoteAddress, OwningProcess)
-{
-    Write-Host $conexion.RemoteAddress, (Get-Process -Id $conexion.OwningProcess).name
-}
-```
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-obtener-los-identificadores-de-proceso-de-cada-conexion-tcp-e-indicar-el-nombre-del-proceso-para-cada-identificador/
 
 #### Ejercicio de cliente-servidor UDP
 * https://www.jesusninoc.com/02/12/enviar-una-ventana-mediante-el-protocolo-udp-de-un-ordenador-a-otro-desde-powershell-hacerlo-de-forma-simple-y-sencilla/
