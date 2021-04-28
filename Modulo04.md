@@ -7,20 +7,7 @@
 * https://www.jesusninoc.com/05/09/creacion-masiva-de-usuarios-en-el-directorio-activo-con-powershell-parte-2/
 
 #### Ejercicio: crear usuarios en AD, carpeta compartida y asignar permisos
-```PowerShell
-foreach($usuario in Get-Content .\usuarios.txt)
-{
-    $usuario
-    $password = (ConvertTo-SecureString "Alum4dos" -AsPlainText -force)
-    New-ADUSer -Name $usuario -Sam $usuario -Path "OU=asir,DC=andel,DC=local" -AccountPassword $password -Enable $true
-    $HomeDirectory = ("\\localhost\log\" + $usuario)
-    mkdir $HomeDirectory
-    $usuariomaspermiso = $usuario + ":F"
-    $rutantfs = "C:\Users\Administrador\Desktop\log\" + $usuario
-    icacls $rutantfs /grant $usuariomaspermiso
-    Start-Sleep -Seconds 5
-}
-```
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-crear-usuarios-en-ad-active-directory-carpeta-compartida-y-asignar-permisos/
 
 ### Unidades organizativas
 * https://www.jesusninoc.com/06/18/verificar-si-existe-una-unidad-organizativa-con-powershell/
