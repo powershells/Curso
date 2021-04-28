@@ -21,7 +21,7 @@ for(1)
     # Con Out-File
     (Get-Process).Name | Out-File -FilePath ($nombre+"\prueba.txt")
 
-    Start-Sleep -Seconds (10)
+    Start-Sleep -Seconds (10*60)
 }
 ```
 
