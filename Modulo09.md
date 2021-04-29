@@ -32,5 +32,12 @@
 * https://www.jesusninoc.com/04/09/crear-un-modulo-en-powershell/
 * https://www.jesusninoc.com/11/01/instalar-y-ejecutar-ssh-para-powershell/
 
+#### Ejemplos de creación de módulos
+```PowerShell
+New-Module -ScriptBlock {function Hello {"Hello!"}}
+New-Module -ScriptBlock {$SayHelloHelp="Type 'SayHello', a space, and a name."; function SayHello ($name) { "Hello, $name" }; Export-ModuleMember -function SayHello -Variable SayHelloHelp}
+New-Module -ScriptBlock {function Hello {"Hello!"}} -name GreetingModule | Import-Module
+```
+
 ## Automatización avanzada
 * https://www.jesusninoc.com/08/06/6-automatizacion-con-powershell-nivel-avanzado/
