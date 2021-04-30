@@ -17,3 +17,9 @@
 
 ## Automatización avanzada
 * https://www.jesusninoc.com/08/06/6-automatizacion-con-powershell-nivel-avanzado/
+
+## Rendimiento
+### Tiempos de ejecución
+* https://www.jesusninoc.com/03/30/tiempo-que-tarda-en-ejecutarse-un-script-en-powershell/
+### Vaciar consumo de memoria
+* https://www.jesusninoc.com/04/27/eliminar-archivos-temporales-y-vaciar-el-consumo-de-memoria-de-windows-con-powershell/
