@@ -50,6 +50,9 @@ foreach($proceso in Get-Process)
 
 ## Funciones
 
+### Explica cómo agregar parámetros a funciones avanzadas
+* https://docs.microsoft.com/es-es/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters?view=powershell-7.1
+
 ### Funciones complejas
 * https://www.jesusninoc.com/07/02/2-programacion-en-powershell/#Funciones
 
