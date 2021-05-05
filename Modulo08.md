@@ -20,30 +20,11 @@ $postParams = @{'edad'=34
 (Invoke-WebRequest -Uri "http://localhost/GetPost/exampleget.php" -Method Post -Body $postParams).content
 ```
 
-#### Ejercicios de PowerShell: crear un script en el que pasemos como parámetros el número de procesos que queremos listar y el orden en el que queremos ver el resultado
-```PowerShell
-Param(
-    [int] $numero,
-    [string] $tipodeorden
-)
-
-Invoke-Expression "Get-Process | select -First $numero | sort $tipodeorden"
-```
+#### Ejercicios de PowerShell: crear un script en el que pasamos como parámetros el número de procesos que queremos listar y el orden en el que queremos ver el resultado
+* https://www.jesusninoc.com/05/05/ejercicios-de-powershell-crear-un-script-en-el-que-pasamos-como-parametros-el-numero-de-procesos-que-queremos-listar-y-el-orden-en-el-que-queremos-ver-el-resultado/
 
 ### Ejercicios de PowerShell: crear un script que permite mostrar los procesos cuyo tiempo de consumo de CPU sea mayor que 10
-```PowerShell
-Param(
-    [int] $valorconsumo
-)
-
-foreach($proceso in Get-Process)
-{
-    if($proceso.cpu -gt $valorconsumo)
-    {
-        $proceso.Name
-    }
-}
-```
+* https://www.jesusninoc.com/05/05/ejercicios-de-powershell-crear-un-script-que-permite-mostrar-los-procesos-cuyo-tiempo-de-consumo-de-cpu-sea-mayor-que-10/
 
 ## Programación de scripts
 * https://www.jesusninoc.com/07/02/2-programacion-en-powershell/
@@ -59,50 +40,8 @@ foreach($proceso in Get-Process)
 #### Ejercicio realizar un login
 * https://www.jesusninoc.com/10/19/ejercicios-de-powershell-realizar-una-funcion-de-login/
 
-#### Ejercicios de PowerShell: crear una función que valide un usuario leyendo el nombre y el password (en hash) correcto de un fichero. En el caso de que el login sea correcto se almacena la palabra "correcto" en un fichero y si es incorrecto el login se almacen la palabra "incorrecto" (añadir la fecha del intento)
-```PowerShell
-# Crear una función que valide un usuario leyendo el nombre
-# y el password (en hash) correcto de un fichero. En el caso de que el login sea 
-# correcto se almacena la palabra "correcto" en un fichero y si es incorrecto el login
-# se almacen la palabra "incorrecto" (añadir la fecha del intento)
-
-[Reflection.Assembly]::LoadWithPartialName("System.Web")
-
-function validar
-{
-  param
-  (
-    [String[]]$usuario,$password
-  )
-  begin
-  {
-    $infodelogin = Get-Content .\login.txt
-    $passusuariohash = [System.Web.Security.FormsAuthentication]::HashPasswordForStoringInConfigFile($password, "SHA256")
-  }
-  process
-  {
-    if($usuario -eq $infodelogin.Split(",")[0] -and $passusuariohash -eq $infodelogin.Split(",")[1])
-    {
-        $ok = $true
-    }
-    else
-    {
-        $ok = $false
-    }
-  }
-  end
-  {
-    if($ok -eq $true)
-    {
-        "correcto "+(Get-Date) | Out-File logcorrecto.txt -Append
-    }
-    else
-    {
-        "incorrecto "+(Get-Date) | Out-File logcorrecto.txt -Append
-    }
-  }
-}
-```
+#### Ejercicios de PowerShell: crear una función que valide un usuario leyendo el nombre y el password (en hash) correcto de un fichero. En el caso de que el login sea correcto se almacena la palabra "correcto" en un fichero y si es incorrecto el login se almacene la palabra "incorrecto" (añadir la fecha del intento)
+* https://www.jesusninoc.com/05/05/ejercicios-de-powershell-crear-una-funcion-que-valide-un-usuario-leyendo-el-nombre-y-el-password-en-hash-correcto-de-un-fichero-en-el-caso-de-que-el-login-sea-correcto-se-almacena-la-palabra-cor/
 
 ### Funciones dinámicas
 * https://www.jesusninoc.com/02/27/crear-una-funcion-dinamica-en-powershell-que-obtiene-el-contenido-de-la-funcion-de-un-fichero-json-que-esta-en-un-servidor-web/
