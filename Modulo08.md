@@ -61,6 +61,11 @@ foreach($proceso in Get-Process)
 
 #### Ejercicios de PowerShell: crear una función que valide un usuario leyendo el nombre y el password (en hash) correcto de un fichero. En el caso de que el login sea correcto se almacena la palabra "correcto" en un fichero y si es incorrecto el login se almacen la palabra "incorrecto" (añadir la fecha del intento)
 ```PowerShell
+# Crear una función que valide un usuario leyendo el nombre
+# y el password (en hash) correcto de un fichero. En el caso de que el login sea 
+# correcto se almacena la palabra "correcto" en un fichero y si es incorrecto el login
+# se almacen la palabra "incorrecto" (añadir la fecha del intento)
+
 [Reflection.Assembly]::LoadWithPartialName("System.Web")
 
 function validar
@@ -89,11 +94,11 @@ function validar
   {
     if($ok -eq $true)
     {
-        "login correcto"
+        "correcto "+(Get-Date) | Out-File logcorrecto.txt -Append
     }
     else
     {
-        "login incorrecto"
+        "incorrecto "+(Get-Date) | Out-File logcorrecto.txt -Append
     }
   }
 }
