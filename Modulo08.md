@@ -49,10 +49,52 @@ foreach($proceso in Get-Process)
 * https://www.jesusninoc.com/07/02/2-programacion-en-powershell/
 
 ## Funciones
+
 ### Funciones complejas
 * https://www.jesusninoc.com/07/02/2-programacion-en-powershell/#Funciones
+
 #### Ejercicio realizar un login
 * https://www.jesusninoc.com/10/19/ejercicios-de-powershell-realizar-una-funcion-de-login/
+
+#### Ejercicios de PowerShell: crear una función que valide un usuario leyendo el nombre y el password (en hash) correcto de un fichero. En el caso de que el login sea correcto se almacena la palabra "correcto" en un fichero y si es incorrecto el login se almacen la palabra "incorrecto" (añadir la fecha del intento)
+```PowerShell
+[Reflection.Assembly]::LoadWithPartialName("System.Web")
+
+function validar
+{
+  param
+  (
+    [String[]]$usuario,$password
+  )
+  begin
+  {
+    $infodelogin = Get-Content .\login.txt
+    $passusuariohash = [System.Web.Security.FormsAuthentication]::HashPasswordForStoringInConfigFile($password, "SHA256")
+  }
+  process
+  {
+    if($usuario -eq $infodelogin.Split(",")[0] -and $passusuariohash -eq $infodelogin.Split(",")[1])
+    {
+        $ok = $true
+    }
+    else
+    {
+        $ok = $false
+    }
+  }
+  end
+  {
+    if($ok -eq $true)
+    {
+        "login correcto"
+    }
+    else
+    {
+        "login incorrecto"
+    }
+  }
+}
+```
 
 ### Funciones dinámicas
 * https://www.jesusninoc.com/02/27/crear-una-funcion-dinamica-en-powershell-que-obtiene-el-contenido-de-la-funcion-de-un-fichero-json-que-esta-en-un-servidor-web/
