@@ -11,6 +11,40 @@
 * https://www.jesusninoc.com/02/05/read-and-write-host/
 * https://www.jesusninoc.com/02/17/pasar-parametros-en-scripts-de-powershell/
 
+#### Ejercicios de PowerShell: GET y POST
+```PowerShell
+$postParams = @{'edad'=34
+'nombre'="carlos"}
+
+(Invoke-WebRequest "http://localhost/GetPost/exampleget.php?nombre=carlos&edad=34").content
+(Invoke-WebRequest -Uri "http://localhost/GetPost/exampleget.php" -Method Post -Body $postParams).content
+```
+
+#### Ejercicios de PowerShell: crear un script en el que pasemos como parámetros el número de procesos que queremos listar y el orden en el que queremos ver el resultado
+```PowerShell
+Param(
+    [int] $numero,
+    [string] $tipodeorden
+)
+
+Invoke-Expression "Get-Process | select -First $numero | sort $tipodeorden"
+```
+
+### Ejercicios de PowerShell: crear un script que permite mostrar los procesos cuyo tiempo de consumo de CPU sea mayor que 10
+```PowerShell
+Param(
+    [int] $valorconsumo
+)
+
+foreach($proceso in Get-Process)
+{
+    if($proceso.cpu -gt $valorconsumo)
+    {
+        $proceso.Name
+    }
+}
+```
+
 ## Programación de scripts
 * https://www.jesusninoc.com/07/02/2-programacion-en-powershell/
 
