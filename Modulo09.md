@@ -19,7 +19,33 @@
 * https://www.jesusninoc.com/04/27/eliminar-archivos-temporales-y-vaciar-el-consumo-de-memoria-de-windows-con-powershell/
 
 ## GUI
+* https://www.jesusninoc.com/07/13/13-interfaces-de-usuario-graficas-en-powershell-nivel-intermedio/
 * https://www.jesusninoc.com/08/07/7-diseno-grafico-con-powershell-nivel-avanzado/
+
+#### Ejercicios de PowerShell: crear un GUI en donde se introduzca un nombre de proceso y mediante el pulsado de un botón se arranque dicho proceso
+```PowerShell
+$form = [System.Windows.Forms.Form] @{
+    Text = 'Mi formulario'
+}
+
+$button = [System.Windows.Forms.Button] @{
+    Text = 'Pulsar'
+    Location = New-Object System.Drawing.Point(10,40)
+}
+
+$TextBox = [System.Windows.Forms.TextBox] @{
+    Text = "Introduzca proceso para arrancar"
+    Size = New-Object System.Drawing.Size(260,40)
+}
+
+$button.add_Click{
+    Start-Process $TextBox.Text
+}
+
+$form.Controls.Add($button)
+$form.Controls.Add($TextBox)
+$form.ShowDialog()
+```
 
 ## Automatización avanzada
 * https://www.jesusninoc.com/08/06/6-automatizacion-con-powershell-nivel-avanzado/
