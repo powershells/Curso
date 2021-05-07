@@ -1,20 +1,20 @@
 # Repaso de todo el curso
 
-## Scripts
+## - Scripts
 #### Ejercicios de PowerShell: crear un menú
 #### Ejercicios de PowerShell: provocar un error y personalizar la respuesta al error
-## Características
-## Variables
-## Objetos
-## Canalización
-## Operaciones
-## Importar contenido
+## - Características
+## - Variables
+## - Objetos
+## - Canalización
+## - Operaciones
+## - Importar contenido
 #### Ejercicios de PowerShell: leer operaciones de un fichero y realizarlas
-## Procesos
+## - Procesos
 #### Ejercicios de PowerShell: ver qué usuario ejecuta un proceso
-## Funciones
+## - Funciones
 #### Ejercicios de PowerShell: crear una función que indica el nombre del usuario que ejecuta un proceso (pasar el nombre de proceso como parámetro)
-## Ficheros
-## Usuarios
-## Red
-## CIM
+## - Ficheros
+## - Usuarios
+## - Red
+## - CIM
