@@ -2,6 +2,7 @@
 
 ## Scripts
 #### Ejercicios de PowerShell: crear un menú
+#### Ejercicios de PowerShell: provocar un error y personalizar la respuesta al error
 ## Características
 ## Objetos
 ## Canalización
@@ -14,4 +15,5 @@
 #### Ejercicios de PowerShell: crear una función que indica el nombre del usuario que ejecuta un proceso (pasar el nombre de proceso como parámetro)
 ## Ficheros
 ## Usuarios
+## Red
 ## CIM
