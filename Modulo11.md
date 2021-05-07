@@ -6,9 +6,9 @@
 ## Operaciones
 ## Funciones
 ## Importar contenido
-
-## Cmdlets
-- Procesos
-- Ficheros
-- Usuarios
-- CIM
+#### Ejercicios de PowerShell: leer operaciones de un fichero y realizarlas
+## Procesos
+#### Ejercicios de PowerShell: ver qué usuario ejecuta un proceso
+## Ficheros
+## Usuarios
+## CIM
