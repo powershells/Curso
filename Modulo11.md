@@ -4,6 +4,7 @@
 #### Ejercicios de PowerShell: crear un menú
 #### Ejercicios de PowerShell: provocar un error y personalizar la respuesta al error
 ## Características
+## Variables
 ## Objetos
 ## Canalización
 ## Operaciones
