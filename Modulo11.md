@@ -3,19 +3,33 @@
 ## - Scripts
 #### Ejercicios de PowerShell: crear un menú
 #### Ejercicios de PowerShell: provocar un error y personalizar la respuesta al error
-##- Características
+## - Características
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Caracteristicas                                                                                    
 ## - Variables
+* https://www.jesusninoc.com/07/02/2-programacion-en-powershell/#Variables
 ## - Objetos
+* https://www.jesusninoc.com/07/02/2-programacion-en-powershell/#Objetos
 ## - Canalización
+* https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Canalizaciones
 ## - Operaciones
+* https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Operaciones
 ## - Importar contenido
+* https://www.jesusninoc.com/07/04/4-gestion-del-sistema-de-archivos-en-powershell/#Importar_el_contenido_de_un_fichero_separado_por_comas
 #### Ejercicios de PowerShell: leer operaciones de un fichero y realizarlas
 ## - Procesos
+* https://www.jesusninoc.com/07/07/7-gestion-de-procesos-en-powershell/
 #### Ejercicios de PowerShell: ver qué usuario ejecuta un proceso
 ## - Funciones
+* https://www.jesusninoc.com/07/02/2-programacion-en-powershell/#Funciones
 #### Ejercicios de PowerShell: crear una función que indica el nombre del usuario que ejecuta un proceso (pasar el nombre de proceso como parámetro)
-## - Ficheros
 ## - Usuarios
+* https://www.jesusninoc.com/07/08/8-gestion-de-usuarios-en-powershell/
 ## - Red
+* https://www.jesusninoc.com/07/09/9-gestion-de-la-red-en-powershell/
 ## - CIM
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-realizar-un-inventario-de-un-equipo-mediante-llamadas-cim/
+## - Sofware
+* https://www.jesusninoc.com/07/05/5-gestion-del-software-en-powershell/
+#### Ejercicios de PowerShell: realizar un inventario del software del equipo
+## - Rendimiento
+* https://www.jesusninoc.com/07/10/10-gestion-del-rendimiento-en-powershell/
