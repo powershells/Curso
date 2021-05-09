@@ -3,7 +3,8 @@
 ## - Scripts
 #### Ejercicios de PowerShell: crear un menú
 #### Ejercicios de PowerShell: provocar un error y personalizar la respuesta al error
-## - Características
+##- Características
+* https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Caracteristicas                                                                                    
 ## - Variables
 ## - Objetos
 ## - Canalización
