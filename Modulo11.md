@@ -70,7 +70,14 @@ foreach($operacion in $operaciones)
 ```
 ## - Procesos
 * https://www.jesusninoc.com/07/07/7-gestion-de-procesos-en-powershell/
-#### Ejercicios de PowerShell: ver qué usuario ejecuta un proceso
+#### Ejercicios de PowerShell: seleccionar el proceso Chrome cuyo tiempo de ejecución en el procesador sea mayor que 5 segundos y ordenar de forma descendente
+```PowerShell
+Get-Process -Name chrome | Where-Object CPU -GT 1 | Sort-Object CPU -Descending
+```
+#### Ejercicios de PowerShell: seleccionar cinco procesos Chrome cuyo tiempo de ejecución en el procesador sea mayor que 5 segundos y ordenar de forma descendente, el resultado almacenarlo en un fichero
+```PowerShell
+Get-Process -Name chrome | Where-Object CPU -GT 5 | Sort-Object CPU -Descending | select -First 5 | Out-File procesos.txt
+```
 ## - Funciones
 * https://www.jesusninoc.com/07/02/2-programacion-en-powershell/#Funciones
 #### Ejercicios de PowerShell: crear una función que indica el nombre del usuario que ejecuta un proceso (pasar el nombre de proceso como parámetro)
