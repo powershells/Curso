@@ -28,6 +28,14 @@ while($opcion -ne 0)
 }
 ```
 #### Ejercicios de PowerShell: provocar un error y personalizar la respuesta al error
+```PowerShell
+Stop-Process -Name notepad -ErrorAction SilentlyContinue -ErrorVariable processerror3
+
+if($processerror3)
+{
+    "No existe el proceso"
+}
+```
 ## - Características
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Caracteristicas                                                                                    
 ## - Variables
