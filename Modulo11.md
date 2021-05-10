@@ -2,40 +2,11 @@
 
 ## - Scripts
 #### Ejercicios de PowerShell: crear un menú y realizar operaciones sobre procesos
-```PowerShell
-function mostramenu{
-    Write-Host "0. Cerrar el programa"
-    Write-Host "1. Arrancar proceso"
-    Write-Host "2. Mostrar información de proceso"
-    Write-Host "3. Matar proceso proceso"    
-}
+* https://www.jesusninoc.com/05/10/ejercicios-de-powershell-crear-un-menu-y-realizar-operaciones-sobre-procesos/
 
-mostramenu
-
-$opcion = Read-Host "Introduzca opción"
-
-while($opcion -ne 0)
-{
-    switch($opcion)
-    {
-        0{exit}
-        1{Start-Process notepad; pause}
-        2{Start-Sleep -seconds 2; Get-Process -Name notepad; pause; break}
-        3{Stop-Process -Name notepad; pause}
-    }
-    mostramenu
-    $opcion = Read-Host "Introduzca opción"
-}
-```
 #### Ejercicios de PowerShell: provocar un error y personalizar la respuesta al error
-```PowerShell
-Stop-Process -Name notepad -ErrorAction SilentlyContinue -ErrorVariable processerror3
+* https://www.jesusninoc.com/05/10/ejercicios-de-powershell-provocar-un-error-y-personalizar-la-respuesta-al-error/
 
-if($processerror3)
-{
-    "No existe el proceso"
-}
-```
 ## - Características
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Caracteristicas                                                                                    
 ## - Variables
@@ -49,49 +20,22 @@ if($processerror3)
 ## - Importar contenido
 * https://www.jesusninoc.com/07/04/4-gestion-del-sistema-de-archivos-en-powershell/#Importar_el_contenido_de_un_fichero_separado_por_comas
 #### Ejercicios de PowerShell: leer operaciones de un fichero y realizarlas
-```PowerShell
-$operaciones = Import-Csv .\operaciones.txt -Delimiter ";"
+* https://www.jesusninoc.com/05/10/ejercicios-de-powershell-leer-operaciones-de-un-fichero-y-realizarlas/
 
-foreach($operacion in $operaciones)
-{
-    if($operacion.OPERACION -eq "arrancar")
-    {
-        Start-Process $operacion.PARAMETRO
-    }
-    elseif($operacion.OPERACION -eq "verinfo")
-    {
-        Get-Process $operacion.PARAMETRO
-    }
-    elseif($operacion.OPERACION -eq "matar")
-    {
-        Stop-Process -name $operacion.PARAMETRO
-    }
-}
-```
 ## - Procesos
 * https://www.jesusninoc.com/07/07/7-gestion-de-procesos-en-powershell/
+
 #### Ejercicios de PowerShell: seleccionar el proceso Chrome cuyo tiempo de ejecución en el procesador sea mayor que 5 segundos y ordenar de forma descendente
-```PowerShell
-Get-Process -Name chrome | Where-Object CPU -GT 1 | Sort-Object CPU -Descending
-```
+* https://www.jesusninoc.com/05/10/ejercicios-de-powershell-seleccionar-el-proceso-chrome-cuyo-tiempo-de-ejecucion-en-el-procesador-sea-mayor-que-5-segundos-y-ordenar-de-forma-descendente/
+
 #### Ejercicios de PowerShell: seleccionar cinco procesos Chrome cuyo tiempo de ejecución en el procesador sea mayor que 5 segundos y ordenar de forma descendente, el resultado almacenarlo en un fichero
-```PowerShell
-Get-Process -Name chrome | Where-Object CPU -GT 5 | Sort-Object CPU -Descending | select -First 5 | Out-File procesos.txt
-```
+* https://www.jesusninoc.com/05/10/ejercicios-de-powershell-seleccionar-cinco-procesos-chrome-cuyo-tiempo-de-ejecucion-en-el-procesador-sea-mayor-que-5-segundos-y-ordenar-de-forma-descendente-el-resultado-almacenarlo-en-un-fichero/
+
 ## - Funciones
 * https://www.jesusninoc.com/07/02/2-programacion-en-powershell/#Funciones
 #### Ejercicios de PowerShell: crear una función que indica el nombre del usuario que ejecuta un proceso (pasar el nombre de proceso como parámetro)
-```PowerShell
-function vernombre($var)
-{
-    $proceso = "name='$var'"
-    Get-CimInstance Win32_Process -Filter $proceso | 
-    Select Name, @{Name="UserName";Expression={$_.GetOwner().Domain+"\"+$_.GetOwner().User}} | 
-    Sort-Object UserName, Name
-}
+* https://www.jesusninoc.com/05/10/ejercicios-de-powershell-crear-una-funcion-que-indica-el-nombre-del-usuario-que-ejecuta-un-proceso-pasar-el-nombre-de-proceso-como-parametro/
 
-vernombre "Zoom.exe"
-```
 ## - Usuarios
 * https://www.jesusninoc.com/07/08/8-gestion-de-usuarios-en-powershell/
 ## - Red
@@ -101,46 +45,10 @@ vernombre "Zoom.exe"
 ## - Sofware
 * https://www.jesusninoc.com/07/05/5-gestion-del-software-en-powershell/
 #### Ejercicios de PowerShell: realizar una instalción si el software no está instalado
-```PowerShell
-if(Get-Package | Where-Object name -eq "posh-git")
-{
-    "Lo tengo instalado"
-}
-else
-{
-    Install-Package posh-git    
-}
-```
+* https://www.jesusninoc.com/05/10/ejercicios-de-powershell-realizar-una-instalcion-si-el-software-no-esta-instalado/
 #### Ejercicios de PowerShell: realizar un inventario del software del equipo
-```PowerShell
-#Llamadas CIM
-$Sofware = Get-CimInstance Win32_product
- 
-#Crear un objeto con todos los datos sobre el software (name, vendor y version)
-$var = [PSCustomObject]@{
-    nombre = $Sofware.Name
-    fabricante = $Sofware.Vendor
-    version = $Sofware.Version
-} 
-
-$var.fabricante
-```
+* https://www.jesusninoc.com/05/10/ejercicios-de-powershell-realizar-un-inventario-del-software-del-equipo/
 #### Ejercicios de PowerShell: realizar un inventario del software de varios equipos de la red (fichero equipos.txt con nombres de equipos)
-```PowerShell
-foreach($equipo in Get-Content .\equipos.txt)
-{
-    #Llamadas CIM
-    $Sofware = Get-CimInstance Win32_product -ComputerName $equipo
- 
-    #Crear un objeto con todos los datos sobre el software (name, vendor y version)
-    $var = [PSCustomObject]@{
-        nombreequipo = $equipo
-        nombre = $Sofware.Name
-        fabricante = $Sofware.Vendor
-        version = $Sofware.Version
-    }
-    $var
-}
-```
+* https://www.jesusninoc.com/05/10/ejercicios-de-powershell-realizar-un-inventario-del-software-de-varios-equipos-de-la-red-fichero-equipos-txt-con-nombres-de-equipos/
 ## - Rendimiento
 * https://www.jesusninoc.com/07/10/10-gestion-del-rendimiento-en-powershell/
