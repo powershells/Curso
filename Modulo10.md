@@ -1,7 +1,3 @@
-# Realizar el siguiente script
-
--------------------
-
 # Jobs y tareas programadas
 
 ## Jobs
