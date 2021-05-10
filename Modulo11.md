@@ -1,7 +1,32 @@
 # Repaso de todo el curso
 
 ## - Scripts
-#### Ejercicios de PowerShell: crear un menú
+#### Ejercicios de PowerShell: crear un menú y realizar operaciones sobre procesos
+```PowerShell
+function mostramenu{
+    Write-Host "0. Cerrar el programa"
+    Write-Host "1. Arrancar proceso"
+    Write-Host "2. Mostrar información de proceso"
+    Write-Host "3. Matar proceso proceso"    
+}
+
+mostramenu
+
+$opcion = Read-Host "Introduzca opción"
+
+while($opcion -ne 0)
+{
+    switch($opcion)
+    {
+        0{exit}
+        1{Start-Process notepad; pause}
+        2{Start-Sleep -seconds 2; Get-Process -Name notepad; pause; break}
+        3{Stop-Process -Name notepad; pause}
+    }
+    mostramenu
+    $opcion = Read-Host "Introduzca opción"
+}
+```
 #### Ejercicios de PowerShell: provocar un error y personalizar la respuesta al error
 ## - Características
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Caracteristicas                                                                                    
