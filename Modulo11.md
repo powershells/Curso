@@ -74,6 +74,17 @@ foreach($operacion in $operaciones)
 ## - Funciones
 * https://www.jesusninoc.com/07/02/2-programacion-en-powershell/#Funciones
 #### Ejercicios de PowerShell: crear una función que indica el nombre del usuario que ejecuta un proceso (pasar el nombre de proceso como parámetro)
+```PowerShell
+function vernombre($var)
+{
+    $proceso = "name='$var'"
+    Get-CimInstance Win32_Process -Filter $proceso | 
+    Select Name, @{Name="UserName";Expression={$_.GetOwner().Domain+"\"+$_.GetOwner().User}} | 
+    Sort-Object UserName, Name
+}
+
+vernombre "Zoom.exe"
+```
 ## - Usuarios
 * https://www.jesusninoc.com/07/08/8-gestion-de-usuarios-en-powershell/
 ## - Red
