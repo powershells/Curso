@@ -18,12 +18,8 @@
 * https://www.jesusninoc.com/12/08/crear-una-tarea-programada-en-windows-que-ejecute-un-script-de-powershell-cada-10-minutos-de-forma-indefinida-aunque-el-porcentaje-de-bateria-sea-bajo/
 * https://www.jesusninoc.com/03/30/crear-una-tarea-programada-que-ejecute-un-script-que-felicita-el-cumpleanos/
 
-#### Ejercicios de PowerShell: crear un bloque mediante el método Create
-```PowerShell
-$var = "."
-$sb = [scriptblock]::Create("Get-Process -ComputerName $var | Out-File C:\Users\juan\procesos.txt -Append")
-$job = Start-Job -ScriptBlock $sb
-```
+#### Ejercicios de PowerShell: ejecutar un job creando un bloque mediante el método Create
+* https://www.jesusninoc.com/05/10/ejercicios-de-powershell-ejecutar-un-job-creando-un-bloque-mediante-el-metodo-create/
 
 ### Ejecutar un script sin mostrar ventana de ejecución
 * https://www.jesusninoc.com/04/29/ejecutar-un-script-de-powershell-sin-mostrar-la-ventana-de-ejecucion-se-muestra-brevemente-y-desaparece/
