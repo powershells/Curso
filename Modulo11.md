@@ -49,6 +49,25 @@ if($processerror3)
 ## - Importar contenido
 * https://www.jesusninoc.com/07/04/4-gestion-del-sistema-de-archivos-en-powershell/#Importar_el_contenido_de_un_fichero_separado_por_comas
 #### Ejercicios de PowerShell: leer operaciones de un fichero y realizarlas
+```PowerShell
+$operaciones = Import-Csv .\operaciones.txt -Delimiter ";"
+
+foreach($operacion in $operaciones)
+{
+    if($operacion.OPERACION -eq "arrancar")
+    {
+        Start-Process $operacion.PARAMETRO
+    }
+    elseif($operacion.OPERACION -eq "verinfo")
+    {
+        Get-Process $operacion.PARAMETRO
+    }
+    elseif($operacion.OPERACION -eq "matar")
+    {
+        Stop-Process -name $operacion.PARAMETRO
+    }
+}
+```
 ## - Procesos
 * https://www.jesusninoc.com/07/07/7-gestion-de-procesos-en-powershell/
 #### Ejercicios de PowerShell: ver qué usuario ejecuta un proceso
