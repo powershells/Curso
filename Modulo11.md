@@ -82,6 +82,33 @@ foreach($operacion in $operaciones)
 * https://www.jesusninoc.com/04/28/ejercicios-de-powershell-realizar-un-inventario-de-un-equipo-mediante-llamadas-cim/
 ## - Sofware
 * https://www.jesusninoc.com/07/05/5-gestion-del-software-en-powershell/
+#### Ejercicios de PowerShell: realizar una instalción si el software no está instalado
+```PowerShell
+if(Get-Package | Where-Object name -eq "posh-git")
+{
+    "Lo tengo instalado"
+}
+else
+{
+    Install-Package posh-git    
+}
+```
 #### Ejercicios de PowerShell: realizar un inventario del software del equipo
+```PowerShell
+foreach($equipo in Get-Content .\equipos.txt)
+{
+    #Llamadas CIM
+    $Sofware = Get-CimInstance Win32_product -ComputerName $equipo
+ 
+    #Crear un objeto con todos los datos sobre el software (name, vendor y version)
+    $var = [PSCustomObject]@{
+        nombreequipo = $equipo
+        nombre = $Sofware.Name
+        fabricante = $Sofware.Vendor
+        version = $Sofware.Version
+    }
+    $var
+}
+```
 ## - Rendimiento
 * https://www.jesusninoc.com/07/10/10-gestion-del-rendimiento-en-powershell/
