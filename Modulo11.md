@@ -95,6 +95,20 @@ else
 ```
 #### Ejercicios de PowerShell: realizar un inventario del software del equipo
 ```PowerShell
+#Llamadas CIM
+$Sofware = Get-CimInstance Win32_product
+ 
+#Crear un objeto con todos los datos sobre el software (name, vendor y version)
+$var = [PSCustomObject]@{
+    nombre = $Sofware.Name
+    fabricante = $Sofware.Vendor
+    version = $Sofware.Version
+} 
+
+$var.fabricante
+```
+#### Ejercicios de PowerShell: realizar un inventario del software de varios equipos de la red (fichero equipos.txt con nombres de equipos)
+```PowerShell
 foreach($equipo in Get-Content .\equipos.txt)
 {
     #Llamadas CIM
