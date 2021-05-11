@@ -7,8 +7,10 @@
 ## Conceptos
 - CIM (Common Information Model) es un estándar abierto creado por la organización DMTF orientado a proveer una definición común para el intercambio de información entre sistemas, redes, aplicaciones y servicios.
   - https://github.com/jesusninoc/ClasesISO/blob/master/2021-04-31.md#get-ciminstance
+  - https://www.jesusninoc.com/11/09/enumerar-las-clases-cim-de-un-espacio-de-nombres/
 - WMI (Windows Management Instrumentation) es la implementación de Microsoft de CIM, con la que se proveen métodos para consultar y modificar la configuración de una máquina Windows.
   - https://github.com/jesusninoc/ClasesISO/blob/master/2021-04-31.md#get-wmiobject
+  - https://www.jesusninoc.com/11/08/enumerar-todas-las-clases-wmi/
   - https://docs.microsoft.com/es-es/powershell/scripting/samples/getting-wmi-objects--get-ciminstance-?view=powershell-7.2
 - CIM vs WMI
   - La respuesta simple es que puede usar los cmdlets de Instrumental de administración de Windows (WMI) o del Modelo de información común (CIM), pero existen algunas ventajas significativas al usar los cmdlets de CIM más nuevos.
@@ -29,13 +31,9 @@
 ### Hardware
 * https://www.jesusninoc.com/07/03/3-gestion-del-hardware-en-powershell/
 
-#### Realizar un inventario utilizando CIM
-```PowerShell
-$ComputerSystem=Get-CimInstance Win32_ComputerSystem
-$BaseBoard=Get-CimInstance Win32_BaseBoard
-$BIOS=Get-CimInstance Win32_BIOS
-$Processor=Get-CimInstance Win32_Processor
-```
-
 #### Realizar un inventario
 * https://www.jesusninoc.com/03/22/obtener-informacion-sobre-el-hardware-de-un-equipo-creando-un-objeto-y-convertirlo-en-json-y-despues-lo-convierte-a-codigo-qr-por-ultimo-comprueba-y-lee-el-codigo-qr-generado/
+
+#### Realizar un inventario utilizando CIM
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-realizar-un-inventario-de-un-equipo-mediante-llamadas-cim/
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-realizar-un-inventario-de-un-equipo-mediante-llamadas-cim-y-convertirlo-a-json/

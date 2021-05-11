@@ -32,54 +32,16 @@ foreach ($tipo in $lista){
 ```
 
 #### Ejercicio: leer de un fichero nombres de ficheros y directorios y crearlos (solución if simple)
-```PowerShell
-# fichero, compras.txt
-# directorio, pedidos
-
-foreach ($linea in Get-Content .\nombres.txt)
-{
-    if ($linea.Split(",")[0] -eq "fichero")
-    {
-        New-Item -Name $linea.Split(",")[1] -Value "hola"
-    }
-    elseif ($linea.Split(",")[0] -eq "directorio")
-    {
-        New-Item -Name $linea.Split(",")[1] -ItemType Directory
-    }
-    else
-    {
-        "otra cosa"
-    }
-}
-```
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-leer-de-un-fichero-nombres-de-ficheros-y-directorios-y-crearlos-solucion-if-simple/
 
 #### Ejercicio: crear un disco virtual, ponerlo en funcionamiento y cifrar el contenido con BitLocker
-```PowerShell
-New-VHD -Path disc1.vhdx -SizeBytes 100mb
-Mount-VHD .\disc1.vhdx
-Get-Disk
-Initialize-Disk -Number 1
-New-Partition -DiskNumber 1 -UseMaximumSize -AssignDriveLetter
-Get-Volume
-Format-Volume -FileSystem NTFS -DriveLetter d 
-Enable-BitLocker -MountPoint "d:" -RecoveryPasswordProtector -UsedSpaceOnly -Verbose
-```
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-crear-un-disco-virtual-ponerlo-en-funcionamiento-y-cifrar-el-contenido-con-bitlocker/
 
 #### Ejercicio: de todos los procesos que se están ejecutando realizar el hash de cada uno de ellos
-```PowerShell
-foreach ($fichero in Get-Process | select name,path)
-{
-    Write-Host $fichero.name, (Get-FileHash $fichero.Path).Hash
-}
-```
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-de-todos-los-procesos-que-se-estan-ejecutando-realizar-el-hash-de-cada-uno-de-ellos/
 
 #### Ejercicio: de todos los ficheros dll que se están utilizando para ejecutar procesos realizar el hash de cada uno de ellos
-```PowerShell
-foreach ($fichero in ((Get-Process).Modules.FileName | group).name)
-{
-    Get-FileHash $fichero
-}
-```
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-de-todos-los-ficheros-dll-que-se-estan-utilizando-para-ejecutar-procesos-realizar-el-hash-de-cada-uno-de-ellos/
 
 ----------------------
 
@@ -113,54 +75,4 @@ Get-PSProvider
 ------------------
 
 # Ejercicio integrador: crear un usuario con su contraseña, crear una carpeta para el usuario, compartir esa carpeta y añadir en esa carpeta un fichero con los hash de todos los procesos que se están ejecutando y otro fichero con los hash de los todos los ficheros dll. Todos los valores que necesitamos están escritos en un fichero
-
-## - Crear usuario con contraseña leyendo de un fichero utilizando una función, crear una carpeta para el usuario y compartir
-
-```PowerShell
-# Fichero de ejemplo:
-# pepito, P$aswo12
-
-function crearusuario($fichero)
-{
-    foreach ($usuario in Get-Content $fichero)
-    {
-        $pass = ConvertTo-SecureString $usuario.Split(",")[1] -AsPlainText -Force
-        New-LocalUser -Name $usuario.Split(",")[0] -Password $pass
-        New-Item -Name $usuario.Split(",")[0] -ItemType Directory
-        New-SmbShare -Name fso2 -Path ("C:\Users\juan\"+$usuario.Split(",")[0]) -FullAccess administrador,todos
-        New-PSDrive -Name rutafso3 -PSProvider FileSystem -Root \\localhost\fso3
-    }
-}
-
-crearusuario .\usuarios.txt
-```
-
-## - Hash de los programas que se están ejecutando
-
-```PowerShell
-function hashprogramas()
-{
-    foreach ($fichero in Get-Process | select name,path)
-    {
-        $fichero.name, (Get-FileHash $fichero.Path).Hash
-    }
-}
-
-Set-Location rutafso3:\
-hashprogramas | Out-File resultado.txt
-```
-
-## - Hash de todos los ficheros dll
-
-```PowerShell
-function hashdll()
-{
-    foreach ($fichero in ((Get-Process).Modules.FileName | group).name)
-    {
-        Get-FileHash $fichero | select name,hash
-    }
-}
-
-Set-Location rutafso3:\
-hashdll | Out-File resultadodll.txt
-```
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-crear-un-usuario-con-su-contrasena-crear-una-carpeta-para-el-usuario-compartir-esa-carpeta-y-anadir-en-esa-carpeta-un-fichero-con-los-hash-de-todos-los-procesos-que-se-estan-e/

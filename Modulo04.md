@@ -1,5 +1,10 @@
 # Repaso módulo 3
 
+## Acceso remoto
+* https://docs.microsoft.com/es-es/powershell/scripting/learn/ps101/08-powershell-remoting?view=powershell-7.2
+* https://docs.microsoft.com/es-es/powershell/scripting/dsc/troubleshooting/troubleshooting?view=powershell-7.2
+* https://docs.microsoft.com/es-es/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.2
+
 ## Directorio Activo
 * https://www.jesusninoc.com/05/16/utilizar-un-filtro-ldap-para-localizar-un-usuario/
 * https://www.jesusninoc.com/05/06/check-last-login-time-ad-users/
@@ -7,20 +12,7 @@
 * https://www.jesusninoc.com/05/09/creacion-masiva-de-usuarios-en-el-directorio-activo-con-powershell-parte-2/
 
 #### Ejercicio: crear usuarios en AD, carpeta compartida y asignar permisos
-```PowerShell
-foreach($usuario in Get-Content .\usuarios.txt)
-{
-    $usuario
-    $password = (ConvertTo-SecureString "Alum4dos" -AsPlainText -force)
-    New-ADUSer -Name $usuario -Sam $usuario -Path "OU=asir,DC=andel,DC=local" -AccountPassword $password -Enable $true
-    $HomeDirectory = ("\\localhost\log\" + $usuario)
-    mkdir $HomeDirectory
-    $usuariomaspermiso = $usuario + ":F"
-    $rutantfs = "C:\Users\Administrador\Desktop\log\" + $usuario
-    icacls $rutantfs /grant $usuariomaspermiso
-    Start-Sleep -Seconds 5
-}
-```
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-crear-usuarios-en-ad-active-directory-carpeta-compartida-y-asignar-permisos/
 
 ### Unidades organizativas
 * https://www.jesusninoc.com/06/18/verificar-si-existe-una-unidad-organizativa-con-powershell/
@@ -54,42 +46,11 @@ foreach($usuario in Get-Content .\usuarios.txt)
 ## Pasar parámetros
 * https://www.jesusninoc.com/04/15/ejercicios-de-powershell-usos-de-los-parametros-valuefrompipeline/
 
-#### Ejercicio: crear un script que permita arrancar o matar un poceso mediante el uso de funciones teniendo en cuenta ValueFromPipeline
-```PowerShell
-function arrancar($program)
-{
-    Start-Process $program
-    Start-Sleep -Seconds 5
-    return $program
-}
-
-function parar()
-{
-    param([Parameter(ValueFromPipeline)]$program)
-    Stop-Process -Name $program
-}
-
-# ValueFromPipeline
-arrancar notepad | parar
-```
+#### Ejercicio: crear un script que permita arrancar o matar un proceso mediante el uso de funciones teniendo en cuenta ValueFromPipeline
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-crear-un-script-que-permita-arrancar-o-matar-un-proceso-mediante-el-uso-de-funciones-teniendo-en-cuenta-valuefrompipeline/
 
 ## PassThru
 * https://www.jesusninoc.com/04/15/ejercicios-de-powershell-uso-de-passthru/
 
-#### Ejercicio: crear un script que permita arrancar o matar un poceso mediante el uso de funciones teniendo en cuenta PassThru
-```PowerShell
-function arrancar($program)
-{
-    Start-Process $program
-    Start-Sleep -Seconds 5
-    return $program
-}
-
-function parar()
-{
-    param([Parameter(ValueFromPipeline)]$program)
-    Stop-Process $program
-}
-
-Get-Process | Out-GridView -PassThru | parar
-```
+#### Ejercicio: crear un script que permita arrancar o matar un proceso mediante el uso de funciones teniendo en cuenta PassThru
+* https://www.jesusninoc.com/04/28/ejercicios-de-powershell-crear-un-script-que-permita-arrancar-o-matar-un-proceso-mediante-el-uso-de-funciones-teniendo-en-cuenta-passthru/
