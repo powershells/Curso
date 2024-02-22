@@ -9,15 +9,6 @@
 - Automatización
 - Seguridad
 
-## Motivación
-
-* https://www.infodll.com/
-* https://www.jesusninoc.com/04/17/como-funciona-un-bot-como-crear-un-bot-muy-simple-en-2-minutos/
-* https://www.jesusninoc.com/nutrition/
-* https://www.jesusninoc.com/seo/
-* https://www.jesusninoc.com/mercados-y-cotizaciones/
-* https://www.jesusninoc.com/recognition/
-
 ## Características
 * https://www.jesusninoc.com/07/01/1-introduccion-a-powershell/#Caracteristicas
 
