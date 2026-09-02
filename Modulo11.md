@@ -1,4 +1,4 @@
-# Repaso de todo el curso
+# Repaso de todo
 
 ## - Scripts
 #### Ejercicios de PowerShell: crear un menú y realizar operaciones sobre procesos
